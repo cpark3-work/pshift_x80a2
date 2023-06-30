@@ -62,12 +62,17 @@ Grid tcn_grid period=PP offset=PP/2 pitches={0} orient=V
 
 Grid M1_grid_sp_half_ete period=CH offset=0 pitches={M1_ETE/2, CH -M1_ETE/2} orient=H
 
+;old m1 grids
 Grid m1sp_top1075_grid period=CH offset=0 pitches={1075} orient=H
 Grid m1sp_bot365_grid period=CH offset=0 pitches={365} orient=H
 Grid m1sp_top785_grid period=CH offset=0 pitches={785} orient=H
 Grid m1sp_top495_grid period=CH offset=0 pitches={495} orient=H
 Grid m1sp_bot655_grid period=CH offset=0 pitches={655} orient=H
 Grid m1sp_bot945_grid period=CH offset=0 pitches={945} orient=H
+
+;new m1 grids
+Grid m1sp_top940_grid period=CH offset=0 pitches={940} orient=H
+Grid m1sp_bot500_grid period=CH offset=0 pitches={500} orient=H
 
 ;#######################################
 ;##   Layer Definitions               ## 
@@ -329,6 +334,28 @@ AND
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+110)
   Modify m shape=target_shape
 #endif ;}
+
+Transform M1SP_top940to1055
+flip=false
+AND
+  v V0
+  m AllM1 |  this.yh on m1sp_top940_grid 
+             abs(this.yh-v.yh) < 110
+  ;NOT m2 M1 | abs(this.yl - m.yh) < 295; 1235-940
+
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+1055-940)
+  Modify m shape=target_shape
+
+Transform M1SP_bot500to385
+flip=false
+AND
+  v V0
+  m AllM1 |  this.yl on m1sp_bot500_grid 
+             abs(this.yl-v.yl) < 110
+  ;NOT m2 M1 | abs(this.yh - m.yl) < 295; 1235-94 or 500-205
+
+  let target_shape=rectangle(m.xl,m.yl-500+205, m.xh, m.yh)
+  Modify m shape=target_shape
 
 
 Transform Force_M2Bdrawn_color2
