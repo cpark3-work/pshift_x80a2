@@ -210,7 +210,7 @@ AND
   m M1pin | this.yh on m1sp_top1075_grid 
             this.yl on m1sp_bot365_grid 
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+1345-1075)
   Modify m shape=target_shape
@@ -222,7 +222,7 @@ AND
   m AllM1 | this.yh on m1sp_top1075_grid 
             abs(this.yh - v.yh) < 150 ; big enough
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+1055-1075)
   Modify m shape=target_shape
 
@@ -233,8 +233,30 @@ AND
   m AllM1 | this.yl on m1sp_bot365_grid 
             abs(this.yl - v.yl) < 150 ; big enough
   NOT m2 M1 | abs(this.yh - m.yh) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   let target_shape=rectangle(m.xl, m.yl+385-365, m.xh, m.yh)
+  Modify m shape=target_shape
+
+Transform M1drawnSP_top785to940
+flip=false
+AND
+  v V1
+  m AllM1 | this.yh on m1sp_top785_grid 
+            abs(this.yh - v.yh) < 150 ; big enough
+  NOT m2 M1 | abs(this.yl - m.yh) == 160 
+              this.xc == m.xc  
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+940-785)
+  Modify m shape=target_shape
+
+Transform M1drawnSP_bot655to500
+flip=false
+AND
+  v V1
+  m AllM1 | this.yl on m1sp_bot655_grid 
+            abs(this.yl - v.yl) < 150 ; big enough
+  NOT m2 M1 | abs(this.yh - m.yh) == 160 
+              this.xc == m.xc  
+  let target_shape=rectangle(m.xl, m.yl-655+500, m.xh, m.yh)
   Modify m shape=target_shape
 
 
@@ -247,7 +269,7 @@ AND
   ;m AllM1 | this.yh on m1sp_top785_grid 
   m M1pin | this.yh on m1sp_top785_grid 
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+940-785)
   Modify m shape=target_shape
@@ -258,7 +280,7 @@ AND
   ;m AllM1 | this.yh on m1sp_top495_grid 
   m M1pin | this.yh on m1sp_top495_grid 
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+590-495)
   Modify m shape=target_shape
 
@@ -268,7 +290,7 @@ AND
   ;m AllM1 | this.yl on m1sp_bot655_grid 
   m M1pin | this.yl on m1sp_bot655_grid 
   NOT m2 M1 | abs(this.yh - m.yl) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   
   let target_shape=rectangle(m.xl, m.yl-655+500, m.xh, m.yh)
   Modify m shape=target_shape
@@ -279,7 +301,7 @@ AND
   ;m AllM1 | this.yl on m1sp_bot945_grid 
   m M1pin | this.yl on m1sp_bot945_grid 
   NOT m2 M1 | abs(this.yh - m.yl) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   
   let target_shape=rectangle(m.xl, m.yl-945+850, m.xh, m.yh)
   Modify m shape=target_shape
@@ -292,7 +314,7 @@ AND
           this.yl on m1sp_bot945_grid 
           abs(this.yl-v.yl) < 150 ; "big enough" value
   NOT m2 M1 | abs(this.yh - m.yl) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   
   let target_shape=rectangle(m.xl, m.yl-945+850, m.xh, m.yh)
   Modify m shape=target_shape
@@ -305,7 +327,7 @@ AND
           this.yl on m1sp_top495_grid 
           abs(this.yh-v.yh) < 150 ; "big enough" value
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
-              this.xc == m.yc  
+              this.xc == m.xc  
   
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+590-495)
   Modify m shape=target_shape
