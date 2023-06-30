@@ -64,6 +64,7 @@ Grid M1_grid_sp_half_ete period=CH offset=0 pitches={M1_ETE/2, CH -M1_ETE/2} ori
 
 Grid m1sp_top1075_grid period=CH offset=0 pitches={1075} orient=H
 Grid m1sp_bot365_grid period=CH offset=0 pitches={365} orient=H
+
 Grid m1sp_top785_grid period=CH offset=0 pitches={785} orient=H
 Grid m1sp_top495_grid period=CH offset=0 pitches={495} orient=H
 Grid m1sp_bot655_grid period=CH offset=0 pitches={655} orient=H
@@ -203,179 +204,109 @@ Type MGC Wire layer=gva
 Type LvsMatch Wire layer=lvsExactMatch_id orient=H
 
 
-Grid M2_trackeven period=2*CH offset=0 pitches={0,2*360,CH,4*360,6*360} orient=H
-Grid M2_trackodd period=2*CH offset=0 pitches={360,3*360,5*360,7*360} orient=H
-
-Transform devType_b2a
+Transform M1pinSP_midtracks_extd_top
 flip=false
 AND
-  b_type devtypeB 
-  let target_shape=Set{b_type}
-  Modify b_type shape=target_shape layer=devTypeA_id net=b_type.net
-
-Transform regionid_126to144
-flip=false
-AND
-  i CH126EMRid  
-  Modify i shape=i layer=b144hRegionEMR_id
-
-Transform pitchid_45to48
-flip=false
-AND
-  i PP45id
-  Modify i shape=i layer=p48Region_id
+  m M1pin | this.yh on m1sp_top1075_grid 
+            this.yl on m1sp_bot365_grid 
+  NOT m2 M1 | abs(this.yl - m.yh) == 160 
+              this.xc == m.yc  
   
-#if 0 ;{
-;tmp
-Transform M2_B2C_tmp
-flip=false
-AND
-  m M2B
-  let t=rectangle(m.xl-85, m.yl, m.xh+85, m.yh)
-  Modify m shape=t layer=m4
-;tmp
-Transform M2pin_B2C_tmp
-flip=false
-AND
-  m M2Bpin
-  let t=rectangle(m.xl-85, m.yl, m.xh+85, m.yh)
-  Modify m shape=t layer=m4_pin
-;tmp
-Transform M2kor_B2C_tmp
-flip=false
-AND
-  m M2Bkor
-  let t=rectangle(m.xl-85, m.yl, m.xh+85, m.yh)
-  Modify m shape=t layer=m4_blockage
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+1345-1075)
+  Modify m shape=target_shape
 
-Transform M2_C2B
-flip=false
-AND
-  m M2C
-  let t=rectangle(m.xl+85, m.yl, m.xh-85, m.yh)
-  Modify m shape=t layer=m2_color1
-
-Transform M2pin_C2B
-flip=false
-AND
-  m M2Cpin
-  let t=rectangle(m.xl+85, m.yl, m.xh-85, m.yh)
-  Modify m shape=t layer=m2_color1_pin
-
-Transform M2kor_C2B
-flip=false
-AND
-  m M2Ckor
-  let t=rectangle(m.xl+85, m.yl, m.xh-85, m.yh)
-  Modify m shape=t layer=m2_color1_blockage
-
-Transform M2_B2C_final
-flip=false
-AND
-  m M4
-  Modify m shape=m layer=m2_color2
-
-Transform M2pin_B2C_final
-flip=false
-AND
-  m M4pin
-  Modify m shape=m layer=m2_color2_pin
-
-Transform M2kor_B2C_final
-flip=false
-AND
-  m M4kor
-  Modify m shape=m layer=m2_color2_blockage
-
-
-
-Transform VG_resize
-flip=false
-AND
-  a_v AllViaG 
-
-  let target_shape=rectangle(a_v.xl, a_v.yc-130/2, a_v.xh, a_v.yc+130/2)
-  Modify a_v shape=target_shape
-
-Transform VT_resize
-flip=false
-AND
-  a_v AllViaT 
-
-  let target_shape=rectangle(a_v.xl, a_v.yc-150/2, a_v.xh, a_v.yc+150/2)
-  Modify a_v shape=target_shape
-
-Transform V1_resize
-flip=false
-AND
-  a_v AllV1
-
-  let target_shape=rectangle(a_v.xl, a_v.yc-170/2, a_v.xh, a_v.yc+170/2)
-  Modify a_v shape=target_shape
-
-Transform Del_sliA0
-flip=false
-AND
-  s SLIA0
-
-  Delete s 
-
-Transform M1SP_95to106
+Transform M1drawnSP_top1075to1055
 flip=false
 AND
   v V0
-  m AllM1 | this.enclosure(v,V) < 110
-
-  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+110)
+  m AllM1 | this.yh on m1sp_top1075_grid 
+            abs(this.yh - v.yh) < 150 ; big enough
+  NOT m2 M1 | abs(this.yl - m.yh) == 160 
+              this.xc == m.yc  
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+1055-1075)
   Modify m shape=target_shape
-#endif ;}
 
-
-Transform Force_M2Bdrawn_color2
+Transform M1drawnSP_bot365to385
 flip=false
 AND
-  m M2B    | this.yc on M2_trackeven
-  Modify m  layer=m2_color2
+  v V0
+  m AllM1 | this.yl on m1sp_bot365_grid 
+            abs(this.yl - v.yl) < 150 ; big enough
+  NOT m2 M1 | abs(this.yh - m.yh) == 160 
+              this.xc == m.yc  
+  let target_shape=rectangle(m.xl, m.yl+385-365, m.xh, m.yh)
+  Modify m shape=target_shape
 
-Transform Force_M2Bpin_color2
+
+
+
+
+Transform M1pinSP_top785to940
 flip=false
 AND
-  m M2Bpin    | this.yc on M2_trackeven
-  Modify m  layer=m2_color2_pin
+  ;m AllM1 | this.yh on m1sp_top785_grid 
+  m M1pin | this.yh on m1sp_top785_grid 
+  NOT m2 M1 | abs(this.yl - m.yh) == 160 
+              this.xc == m.yc  
+  
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+940-785)
+  Modify m shape=target_shape
 
-Transform Force_M2Bkor_color2
+Transform M1pinSP_top495to590
 flip=false
 AND
-  m M2Bkor    | this.yc on M2_trackeven
-  Modify m  layer=m2_color2_blockage
+  ;m AllM1 | this.yh on m1sp_top495_grid 
+  m M1pin | this.yh on m1sp_top495_grid 
+  NOT m2 M1 | abs(this.yl - m.yh) == 160 
+              this.xc == m.yc  
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+590-495)
+  Modify m shape=target_shape
 
-Transform Force_M2Cdrawn_color1
+Transform M1pinSP_bot655to500
 flip=false
 AND
-  m M2C    | this.yc on M2_trackodd
-  Modify m  layer=m2_color1
+  ;m AllM1 | this.yl on m1sp_bot655_grid 
+  m M1pin | this.yl on m1sp_bot655_grid 
+  NOT m2 M1 | abs(this.yh - m.yl) == 160 
+              this.xc == m.yc  
+  
+  let target_shape=rectangle(m.xl, m.yl-655+500, m.xh, m.yh)
+  Modify m shape=target_shape
 
-Transform Force_M2Cpin_color1
+Transform M1pinSP_bot945to850
 flip=false
 AND
-  m M2Cpin    | this.yc on M2_trackodd
-  Modify m  layer=m2_color1_pin
+  ;m AllM1 | this.yl on m1sp_bot945_grid 
+  m M1pin | this.yl on m1sp_bot945_grid 
+  NOT m2 M1 | abs(this.yh - m.yl) == 160 
+              this.xc == m.yc  
+  
+  let target_shape=rectangle(m.xl, m.yl-945+850, m.xh, m.yh)
+  Modify m shape=target_shape
 
-Transform Force_M2Ckor_color1
+Transform M1drawnSP_bot945to850
 flip=false
 AND
-  m M2Ckor    | this.yc on M2_trackodd
-  Modify m  layer=m2_color1_blockage
+  v V1
+  m M1 |  this.intersects(v) 
+          this.yl on m1sp_bot945_grid 
+          abs(this.yl-v.yl) < 150 ; "big enough" value
+  NOT m2 M1 | abs(this.yh - m.yl) == 160 
+              this.xc == m.yc  
+  
+  let target_shape=rectangle(m.xl, m.yl-945+850, m.xh, m.yh)
+  Modify m shape=target_shape
 
-Transform Match_M1drawn2pin
+Transform M1drawnSP_top495to590
 flip=false
 AND
-  m M1
-  mp M1pin | this.intersects(m) 
-             OR
-               this.yl != m.yl 
-               this.yh != m.yh 
-  let target_shape=rectangle(mp.xl, mp.yl, mp.xh, mp.yh)
-  Modify m  shape=target_shape
-
+  v V1
+  m M1 |  this.intersects(v) 
+          this.yl on m1sp_top495_grid 
+          abs(this.yh-v.yh) < 150 ; "big enough" value
+  NOT m2 M1 | abs(this.yl - m.yh) == 160 
+              this.xc == m.yc  
+  
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+590-495)
+  Modify m shape=target_shape
 
