@@ -1,0 +1,18 @@
+#setenv LAYGEN /nfs/site/proj/cit/tools/laygen/latest
+
+#clgxchng
+
+#1 cell
+#~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_sandbox/ --output_dir pshifted/ --layer_map p1280_pshift.map --shift_spec conv144_x80a1.txt
+
+#~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_flat144/ --output_dir pshifted238/ --layer_map p1280_pshift.map --shift_spec conv144_x80a1.txt
+
+rm -rf conv_m1sp_stm_all_flat/
+~/Fruit/rungmo.sh stm_all_flat/ conv_m1sp.gmo
+
+rm -rf pshifted_all/
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir conv_m1sp_stm_all_flat/ --output_dir pshifted_all/ --layer_map p1280_pshift.map --shift_spec conv144_x80a1.txt
+
+rm -rf output_stms
+~/Fruit/rungmo.sh pshifted_all/output_stms/ x80a_144emr_conv_layers.gmo
+
