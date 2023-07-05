@@ -4,6 +4,8 @@
 
 
 Constant PP=450
+Constant PP45=450
+Constant PP48=480
 Constant CH=1440
 Constant TCN_ETE=140
 Constant PL_ETE=140
@@ -53,6 +55,9 @@ Grid mid_cell_grid period=CH offset=CH/2 pitches={0} orient=H
 Grid midCH_grid period=CH offset=CH/2 pitches={0} orient=H
 Grid poly_grid period=PP offset=0 pitches={0} orient=V
 Grid tcn_grid period=PP offset=PP/2 pitches={0} orient=V
+
+Grid pp45_grid period=PP45 offset=0 pitches={0} orient=V
+Grid pp48_grid period=PP48 offset=0 pitches={0} orient=V
 
 ;Grid M0w2_grid period=CH offset=0 pitches={M0_space/2+M0_W2/2, CH-(M0_space/2+M0_W2/2)}
 
@@ -404,5 +409,17 @@ AND
                this.yh != m.yh 
   let target_shape=rectangle(mp.xl, mp.yl, mp.xh, mp.yh)
   Modify m  shape=target_shape
+
+#if 0 ; WIP
+;M2B edge from 45 to 50
+Transform Adjust_M2B_Edges_pp48grid
+flip=false
+AND
+  m AllM2B | this.xl on pp48_grid
+             this.xh on pp45_grid
+
+  let target_shape=rectangle(m.xl+10, m.yl, m.xh-10, m.yh)
+  Modify m  shape=target_shape
+#endif
 
 
