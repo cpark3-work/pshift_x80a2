@@ -363,7 +363,7 @@ AND
   let target_shape=rectangle(m.xl,m.yl-500+205, m.xh, m.yh)
   Modify m shape=target_shape
 
-;adjust line ends
+;pre-adjust line ends based on track
 ;to become M2C
 Transform Adjust_EventualM2C_Edges_trackeven
 flip=false
@@ -372,7 +372,7 @@ AND
   let target_shape=rectangle(m.xl-85, m.yl, m.xh+85, m.yh)
   Modify m  shape=target_shape
 
-;adjust line ends
+;pre-adjust line ends based on track
 ;to become M2B
 Transform Adjust_EventualM2B_Edges_trackodd
 flip=false
@@ -381,7 +381,7 @@ AND
   let target_shape=rectangle(m.xl+85, m.yl, m.xh-85, m.yh)
   Modify m  shape=target_shape
 
-
+;correct m2 color based on track
 Transform Force_M2Bdrawn_color2
 flip=false
 AND
@@ -417,6 +417,25 @@ flip=false
 AND
   m M2Ckor    | this.yc on M2_trackodd
   Modify m  layer=m2_color1_blockage
+
+;post-adjust line ends 
+Transform Adjust_M2B_Edges
+flip=false
+AND
+  m AllM2B 
+  let target_shape=rectangle(m.xl+10, m.yl, m.xh-10, m.yh)
+  Modify m  shape=target_shape
+
+;post-adjust line ends 
+Transform Adjust_M2C_Edges
+flip=false
+AND
+  m AllM2C
+  let target_shape=rectangle(m.xl-5, m.yl, m.xh+5, m.yh)
+  Modify m  shape=target_shape
+
+
+
 
 Transform Match_M1drawn2pin
 flip=false
