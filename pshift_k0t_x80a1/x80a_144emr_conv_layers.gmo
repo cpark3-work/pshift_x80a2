@@ -80,6 +80,9 @@ Grid m1sp_bot945_grid period=CH offset=0 pitches={945} orient=H
 Grid m1sp_top940_grid period=CH offset=0 pitches={940} orient=H
 Grid m1sp_bot500_grid period=CH offset=0 pitches={500} orient=H
 
+Grid m1sp_top480_grid period=CH offset=0 pitches={480} orient=H
+Grid m1sp_bot960_grid period=CH offset=0 pitches={960} orient=H
+
 ;#######################################
 ;##   Layer Definitions               ## 
 ;#######################################
@@ -351,6 +354,31 @@ AND
 
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+1055-940)
   Modify m shape=target_shape
+
+Transform M1SP_top480to590
+flip=false
+AND
+  v V1
+  m AllM1 |  this.yh on m1sp_top480_grid 
+             this.enclosure(v,V) < 90
+  ;NOT m2 M1 | abs(this.yl - m.yh) < 295; 1235-940
+
+  let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+590-480)
+  Modify m shape=target_shape
+
+Transform M1SP_bot960to850
+flip=false
+AND
+  v V1
+  m AllM1 |  this.yh on m1sp_bot960_grid 
+             this.enclosure(v,V) < 90
+  ;NOT m2 M1 | abs(this.yl - m.yh) < 295; 1235-940
+
+  let target_shape=rectangle(m.xl, m.yl-960+850, m.xh, m.yh)
+  Modify m shape=target_shape
+
+
+
 
 #if 0
 Transform M1SP_bot500to385
