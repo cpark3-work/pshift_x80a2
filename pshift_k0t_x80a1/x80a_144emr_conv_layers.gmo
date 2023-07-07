@@ -346,22 +346,24 @@ flip=false
 AND
   v V0
   m AllM1 |  this.yh on m1sp_top940_grid 
-             abs(this.yh-v.yh) < 110
+             this.enclosure(v,V) < 110
   ;NOT m2 M1 | abs(this.yl - m.yh) < 295; 1235-940
 
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+1055-940)
   Modify m shape=target_shape
 
+#if 0
 Transform M1SP_bot500to385
 flip=false
 AND
   v V0
   m AllM1 |  this.yl on m1sp_bot500_grid 
-             abs(this.yl-v.yl) < 110
+             this.enclosure(v,V) < 110
   ;NOT m2 M1 | abs(this.yh - m.yl) < 295; 1235-94 or 500-205
 
   let target_shape=rectangle(m.xl,m.yl-500+205, m.xh, m.yh)
   Modify m shape=target_shape
+#endif
 
 ;pre-adjust line ends based on track
 ;to become M2C
