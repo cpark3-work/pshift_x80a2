@@ -70,7 +70,7 @@ Grid M2_track3 period=CH offset=0 pitches={3*360} orient=H
 Grid M2_track02 period=CH offset=0 pitches={0,2*360} orient=H
 Grid M2_track13 period=CH offset=0 pitches={360,3*360} orient=H
 
-Grid M2_trackeven period=2*CH offset=0 pitches={0,2*360,CH,6*360} orient=H
+Grid M2_trackeven period=2*CH offset=0 pitches={0,2*360,CH,4*360,6*360} orient=H
 Grid M2_trackodd period=2*CH offset=0 pitches={360,3*360,5*360,7*360} orient=H
 
 ;#######################################
@@ -206,40 +206,40 @@ Type MGC Wire layer=gva
 
 Type LvsMatch Wire layer=lvsExactMatch_id orient=H
 
-Transform Force_M2Cdrawn_color1
-flip=false
-AND
-  m M2C    | this.yc on M2_trackeven
-  Modify m  layer=m2_color1
-
-Transform Force_M2Cpin_color1
-flip=false
-AND
-  m M2Cpin    | this.yc on M2_trackeven
-  Modify m  layer=m2_color1_pin
-
-Transform Force_M2Ckor_color1
-flip=false
-AND
-  m M2Ckor    | this.yc on M2_trackeven
-  Modify m  layer=m2_color1_blockage
-
 Transform Force_M2Bdrawn_color2
 flip=false
 AND
-  m M2B    | this.yc on M2_trackodd
+  m M2B    | this.yc on M2_trackeven
   Modify m  layer=m2_color2
 
 Transform Force_M2Bpin_color2
 flip=false
 AND
-  m M2Bpin    | this.yc on M2_trackodd
+  m M2Bpin    | this.yc on M2_trackeven
   Modify m  layer=m2_color2_pin
 
 Transform Force_M2Bkor_color2
 flip=false
 AND
-  m M2Bkor    | this.yc on M2_trackodd
+  m M2Bkor    | this.yc on M2_trackeven
   Modify m  layer=m2_color2_blockage
+
+Transform Force_M2Cdrawn_color1
+flip=false
+AND
+  m M2C    | this.yc on M2_trackodd
+  Modify m  layer=m2_color1
+
+Transform Force_M2Cpin_color1
+flip=false
+AND
+  m M2Cpin    | this.yc on M2_trackodd
+  Modify m  layer=m2_color1_pin
+
+Transform Force_M2Ckor_color1
+flip=false
+AND
+  m M2Ckor    | this.yc on M2_trackodd
+  Modify m  layer=m2_color1_blockage
 
 
