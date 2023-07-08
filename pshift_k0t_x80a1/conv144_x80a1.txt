@@ -5,6 +5,7 @@ chkBoundary,x,450*N+0,480*N+0
 chkBoundary,y,1440*N+0,1440*N+0
 
 b144hRegionEMR,x,450*N+225,480*N+240
+b144hRegionEMR,x,450*N+0,480*N+0
 b144hRegionEMR,y,1440*N+0,1440*N+0
 
 p45Region,x,450*N+225,480*N+240
@@ -258,6 +259,9 @@ m2color2,x,450*N+85,480*N+85
 m2color2,x,450*N+365,480*N+395
 #m2color2,x,450*N+450,480*N+465
 
+#extraction
+m2color2,x,450*N+0,480*N+0
+
 m2color2,y,1440*N+85,1440*N+115
 m2color2,y,1440*N+195,1440*N+245
 m2color2,y,1440*N+375,1440*N+475
@@ -366,6 +370,8 @@ devTypeA,y,1440*N+1270,1440*N+1285
 devTypeA,y,1440*N+890,1440*N+875
 
 lvsExactMatch,y,1440*N+0,delete
+
+stdCellLibrary,x,450*N+0,480*N+0
 stdCellLibrary,y,1440*N+0,delete
 
 emr,y,1440*N+70,1440*N+90
