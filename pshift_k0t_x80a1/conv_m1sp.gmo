@@ -243,6 +243,7 @@ AND
   v V1
   m AllM1 | this.yh on m1sp_top785_grid 
             abs(this.yh - v.yh) < 150 ; big enough
+            this.xc == v.xc
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
               this.xc == m.xc  
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+940-785)
@@ -254,6 +255,7 @@ AND
   v V1
   m AllM1 | this.yl on m1sp_bot655_grid 
             abs(this.yl - v.yl) < 150 ; big enough
+            this.xc == v.xc
   NOT m2 M1 | abs(this.yh - m.yh) == 160 
               this.xc == m.xc  
   let target_shape=rectangle(m.xl, m.yl-655+500, m.xh, m.yh)
@@ -279,6 +281,7 @@ flip=false
 AND
   ;m AllM1 | this.yh on m1sp_top495_grid 
   m M1pin | this.yh on m1sp_top495_grid 
+            this.delta(V) < 780
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
               this.xc == m.xc  
   let target_shape=rectangle(m.xl, m.yl, m.xh, m.yh+590-495)
@@ -288,7 +291,8 @@ Transform M1pinSP_bot655to500
 flip=false
 AND
   ;m AllM1 | this.yl on m1sp_bot655_grid 
-  m M1pin | this.yl on m1sp_bot655_grid 
+  m M1pin | this.yl on m1sp_bot655_grid
+            this.delta(V) < 780
   NOT m2 M1 | abs(this.yh - m.yl) == 160 
               this.xc == m.xc  
   
@@ -313,6 +317,7 @@ AND
   m M1 |  this.intersects(v) 
           this.yl on m1sp_bot945_grid 
           abs(this.yl-v.yl) < 150 ; "big enough" value
+          this.xc == v.xc
   NOT m2 M1 | abs(this.yh - m.yl) == 160 
               this.xc == m.xc  
   
@@ -326,6 +331,7 @@ AND
   m M1 |  this.intersects(v) 
           this.yl on m1sp_top495_grid 
           abs(this.yh-v.yh) < 150 ; "big enough" value
+          this.xc == v.xc
   NOT m2 M1 | abs(this.yl - m.yh) == 160 
               this.xc == m.xc  
   
