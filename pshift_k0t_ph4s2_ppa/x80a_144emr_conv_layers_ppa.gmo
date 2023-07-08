@@ -393,24 +393,6 @@ AND
   Modify m shape=target_shape
 #endif
 
-;pre-adjust line ends based on track
-;to become M2C
-Transform Adjust_EventualM2C_Edges_trackeven
-flip=false
-AND
-  m AllM2B | this.yc on M2_trackeven
-  let target_shape=rectangle(m.xl-85, m.yl, m.xh+85, m.yh)
-  Modify m  shape=target_shape
-
-;pre-adjust line ends based on track
-;to become M2B
-Transform Adjust_EventualM2B_Edges_trackodd
-flip=false
-AND
-  m AllM2C | this.yc on M2_trackodd
-  let target_shape=rectangle(m.xl+85, m.yl, m.xh-85, m.yh)
-  Modify m  shape=target_shape
-
 ;correct m2 color based on track
 Transform Force_M2Bdrawn_color2
 flip=false
@@ -447,36 +429,4 @@ flip=false
 AND
   m M2Ckor    | this.yc on M2_trackodd
   Modify m  layer=m2_color1_blockage
-
-;post-adjust line ends 
-Transform Adjust_M2B_Edges
-flip=false
-AND
-  m AllM2B 
-  let target_shape=rectangle(m.xl+10, m.yl, m.xh-10, m.yh)
-  Modify m  shape=target_shape
-
-;post-adjust line ends 
-Transform Adjust_M2C_Edges
-flip=false
-AND
-  m AllM2C
-  let target_shape=rectangle(m.xl-5, m.yl, m.xh+5, m.yh)
-  Modify m  shape=target_shape
-
-
-
-;do not use this for ppa set
-#if 0
-Transform Match_M1drawn2pin
-flip=false
-AND
-  m M1
-  mp M1pin | this.intersects(m) 
-             OR
-               this.yl != m.yl 
-               this.yh != m.yh 
-  let target_shape=rectangle(mp.xl, mp.yl, mp.xh, mp.yh)
-  Modify m  shape=target_shape
-#endif
 
