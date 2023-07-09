@@ -1,0 +1,23 @@
+#for problematic SH cells
+#supposed to overwrite any other versions
+
+#setenv LAYGEN /nfs/site/proj/cit/tools/laygen/latest
+
+#clgxchng
+
+
+rm -rf conv_pinm1_stm_gmo_in/
+~/Fruit/rungmo.sh stm_gmo_in/ conv_pinm1.gmo
+
+rm -rf conv_m1sp_conv_pinm1_stm_gmo_in/
+~/Fruit/rungmo.sh conv_pinm1_stm_gmo_in/ conv_m1sp.gmo
+
+rm -rf pshifted_gmo
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir conv_m1sp_conv_pinm1_stm_gmo_in/ --output_dir pshifted_gmo/ --layer_map p1280_pshift.map --shift_spec conv144_x80a1.txt
+
+cp -r pshifted_gmo/output_stms pshifted_gmo/output_stms_gmo
+
+rm -rf output_stms_gmo
+~/Fruit/rungmo.sh pshifted_gmo/output_stms_gmo/ x80a_144emr_conv_layers.gmo
+
+cp output_stms_gmo/*stm output_stms/

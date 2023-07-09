@@ -1,0 +1,17 @@
+#setenv LAYGEN /nfs/site/proj/cit/tools/laygen/latest
+
+#clgxchng
+
+
+rm -rf conv_m1sp_stm_Tammy/
+~/Fruit/rungmo.sh stm_Tammy/ conv_m1sp.gmo
+
+rm -rf pshifted_Tammy/
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir conv_m1sp_stm_Tammy/ --output_dir pshifted_Tammy/ --layer_map p1280_pshift.map --shift_spec conv144_x80a1.txt
+
+cp -r pshifted_Tammy/output_stms pshifted_Tammy/output_stms_Tammy
+
+rm -rf output_stms_Tammy
+~/Fruit/rungmo.sh pshifted_Tammy/output_stms_Tammy/ x80a_144emr_conv_layers.gmo
+
+cp output_stms_Tammy/*stm output_stms/

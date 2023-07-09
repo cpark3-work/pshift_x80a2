@@ -1,0 +1,17 @@
+#setenv LAYGEN /nfs/site/proj/cit/tools/laygen/latest
+
+#clgxchng
+
+
+rm -rf conv_m1sp_stm_Vasja/
+~/Fruit/rungmo.sh stm_Vasja/ conv_m1sp.gmo
+
+rm -rf pshifted_Vasja/
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir conv_m1sp_stm_Vasja/ --output_dir pshifted_Vasja/ --layer_map p1280_pshift.map --shift_spec conv144_x80a1.txt
+
+cp -r pshifted_Vasja/output_stms pshifted_Vasja/output_stms_Vasja
+
+rm -rf output_stms_Vasja
+~/Fruit/rungmo.sh pshifted_Vasja/output_stms_Vasja/ x80a_144emr_conv_layers.gmo
+
+cp output_stms_Vasja/*stm output_stms/

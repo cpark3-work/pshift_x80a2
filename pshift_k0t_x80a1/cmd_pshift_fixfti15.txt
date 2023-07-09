@@ -1,0 +1,17 @@
+#setenv LAYGEN /nfs/site/proj/cit/tools/laygen/latest
+
+#clgxchng
+
+
+rm -rf conv_m1sp_stm_fixfti15/
+~/Fruit/rungmo.sh stm_fixfti15/ conv_m1sp.gmo
+
+rm -rf pshifted_fixfti15/
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir conv_m1sp_stm_fixfti15/ --output_dir pshifted_fixfti15/ --layer_map p1280_pshift.map --shift_spec conv144_x80a1.txt
+
+cp -r pshifted_fixfti15/output_stms pshifted_fixfti15/output_stms_fixfti15
+
+rm -rf output_stms_fixfti15
+~/Fruit/rungmo.sh pshifted_fixfti15/output_stms_fixfti15/ x80a_144emr_conv_layers.gmo
+
+cp output_stms_fixfti15/*stm output_stms/
