@@ -17,3 +17,12 @@ rm -rf pshifted_ph4s2/
 rm -rf output_stms
 ~/Fruit/rungmo.sh pshifted_ph4s2/output_stms/ x80a_144emr_conv_layers_ppa.gmo
 
+#convert tc2 to tcn
+rm -rf conv_tc2_tcn_output_stms/
+~/Fruit/rungmo.sh output_stms/ conv_tc2_tcn.gmo
+
+#need testing below
+#placeholder
+#convert to RFX
+#rm -rf conv_tc2_tcn_output_stms/
+#~/Fruit/rungmo.sh output_stms/ conv_RFX_SPX.gmo
