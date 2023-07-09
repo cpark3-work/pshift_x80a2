@@ -1,0 +1,31 @@
+#setenv LAYGEN /nfs/site/proj/cit/tools/laygen/latest
+
+#clgxchng
+
+##intended for one time use to fix TC2 issue
+#rm -rf fix_tc2_TB_m1z_ext_stm_ref_orig/
+#~/Fruit/rungmo.sh ext_stm_ref_orig/ fix_tc2_TB_m1z.gmo
+#cp fix_tc2_TB_m1z_ext_stm_ref_orig/*stm ext_stm_ref/
+
+#rm -rf conv_m1sp_ext_stm_ref/
+#~/Fruit/rungmo.sh ext_stm_ref/ ../pshift_k0t_x80a1/conv_m1sp.gmo
+
+##############
+#using conv144_ph4s2_45pp.txt
+rm -rf pshifted_ph4s2_45pp/
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir conv_m1sp_ext_stm_ref/ --output_dir pshifted_ph4s2_45pp --layer_map ../pshift_k0t_x80a1/p1280_pshift.map --shift_spec conv144_ph4s2_45pp.txt
+
+cp -r pshifted_ph4s2_45pp/output_stms pshifted_ph4s2_45pp/output_stms_45pp 
+
+rm -rf output_stms_45pp
+~/Fruit/rungmo.sh pshifted_ph4s2_45pp/output_stms_45pp/ x80a_144emr_conv_layers_ppa.gmo
+
+#convert tc2 to tcn
+rm -rf conv_tc2_tcn_output_stms_45pp/
+~/Fruit/rungmo.sh output_stms_45pp/ conv_tc2_tcn.gmo
+
+#need testing below
+#placeholder
+#convert to RFX
+#rm -rf conv_tc2_tcn_output_stms_45pp/
+#~/Fruit/rungmo.sh output_stms_45pp/ conv_RFX_SPX.gmo
