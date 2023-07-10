@@ -5,9 +5,15 @@
 
 #clgxchng
 
-
-rm -rf conv_pinm1_stm_gmo_in/
-~/Fruit/rungmo.sh stm_gmo_in/ conv_pinm1.gmo
+########################################Y
+#CAUTION
+# use conv_pinm1_net.gmo instead
+# selectively extend upon review
+########################################Y
+#this one will make ALL m1 pin full length
+#rm -rf conv_pinm1_stm_gmo_in/
+#~/Fruit/rungmo.sh stm_gmo_in/ conv_pinm1.gmo
+########################################Y
 
 rm -rf conv_m1sp_conv_pinm1_stm_gmo_in/
 ~/Fruit/rungmo.sh conv_pinm1_stm_gmo_in/ conv_m1sp.gmo
