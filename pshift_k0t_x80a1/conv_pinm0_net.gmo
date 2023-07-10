@@ -1,0 +1,230 @@
+;#######################################
+;##   Constants                       ## 
+;#######################################
+
+
+Constant PP=450
+Constant CH=1440
+Constant TCN_ETE=140
+Constant PL_ETE=140
+Constant PL_W=120
+Constant Spacer=(PP-PL_W-TCN_W)/2
+Constant TCN_W=130
+Constant M0_ETE=160
+Constant M0_S1=120
+Constant M0_S2=120
+Constant M0_W1=160
+Constant M0_W2=170
+Constant M0_length=1.5*PP-M0_ETE
+Constant M0_Pitch=260
+;Constant Min_M1_length=380
+Constant Min_M1_length=470
+Constant M1_ETE=160
+Constant M1_W=250
+Constant M1_Plug_Pitch=380
+;Constant M1_Pitch=PP
+Constant M2_ETE=350
+Constant M2_S1=110
+Constant M2_S2=110
+Constant M2_W1=170
+Constant M2_W2=180
+;Constant M2_Pitch=240
+;Constant Z1_diff=300
+;Constant Z1_LNR=60
+;Constant Z2_diff=380
+;Constant Z2_LNR=100
+;Constant Z3_diff=470
+;Constant Z3_LNR=190
+;Constant M2_Plug_Pitch=2*PP
+;Constant Min_Devflav_W=3*PP
+Constant M0_Space=100
+;Constant EPE=70
+Constant Min_TCN_Len=580
+;Constant NN_dist=520
+;Constant PP_dist=520
+;Constant NP_dist=360
+
+Type BND LayoutObject layer=chkBoundary_boundary
+
+;Grid ndiff_grid period=CH*2 offset=0 pitches={(CH-NP_dist-Z3_LNR)/2, 2*CH-(CH-NP_dist-Z3_LNR)/2} orient=H
+;Grid pdiff_grid period=CH*2 offset=0 pitches={(CH+NP_dist+Z3_LNR)/2, 2*CH-(CH+NP_dist+Z3_LNR)/2} orient=H
+;Grid diff_grid period=CH*2 offset=0 pitches={(CH-NP_dist-Z3_LNR)/2, 2*CH-(CH-NP_dist-Z3_LNR)/2,(CH+NP_dist+Z3_LNR)/2, 2*CH-(CH+NP_dist+Z3_LNR)/2 } orient=H
+Grid mid_cell_grid period=CH offset=CH/2 pitches={0} orient=H
+Grid midCH_grid period=CH offset=CH/2 pitches={0} orient=H
+Grid poly_grid period=PP offset=0 pitches={0} orient=V
+Grid tcn_grid period=PP offset=PP/2 pitches={0} orient=V
+
+;Grid M0w2_grid period=CH offset=0 pitches={M0_space/2+M0_W2/2, CH-(M0_space/2+M0_W2/2)}
+
+;Grid M0w1_grid period=CH offset=0 pitches={3*M0_space/2+M0_W2+M0_W1/2, CH/2, CH-(3*M0_space/2+M0_W2+M0_W1/2)}
+
+;Grid outer_m0_track_grid period=CH offset=0 pitches={M0_space/2+M0_W2/2,CH-(M0_space/2+M0_W2/2)} orient=H
+
+Grid M1_grid_sp_half_ete period=CH offset=0 pitches={M1_ETE/2, CH -M1_ETE/2} orient=H
+
+Grid m1sp_top1075_grid period=CH offset=0 pitches={1075} orient=H
+Grid m1sp_bot365_grid period=CH offset=0 pitches={365} orient=H
+
+Grid m1sp_top785_grid period=CH offset=0 pitches={785} orient=H
+Grid m1sp_top495_grid period=CH offset=0 pitches={495} orient=H
+Grid m1sp_bot655_grid period=CH offset=0 pitches={655} orient=H
+Grid m1sp_bot945_grid period=CH offset=0 pitches={945} orient=H
+
+;#######################################
+;##   Layer Definitions               ## 
+;#######################################
+Type SDG Wire layer=sdGen orient=V
+Type PL Wire layer=poly orient=V
+Type PLpin Wire layer=poly_pin orient=V
+Type PLplug Plug layer=poly orient=V
+Type TCN Wire layer=tcn orient=V
+Type TCNpin Wire layer=tcn_pin orient=V
+Type TCNplug Plug layer=tcn orient=V
+Type FTI Wire layer=fti orient=V
+Type FTIfill Wire layer=fti_fill orient=V
+Type TCNfill Wire layer=tcn_fill orient=V
+Type PLfill Wire layer=poly_fill orient=V
+Type PLdummy Wire layer=poly_dummy orient=V
+
+Type PP50id Wire layer=p50Region_id
+Type PP45id Wire layer=p45Region_id
+Type CH270id Wire layer=b270hRegion_id
+Type CH180id Wire layer=b180hRegion_id
+Type CH144id Wire layer=b144hRegion_id
+Type CH160id Wire layer=b160hRegion_id
+Type CH108EMRid Wire layer=b108hRegionEMR_id
+Type CH126EMRid Wire layer=b126hRegionEMR_id
+Type CH144EMRid Wire layer=b144hRegionEMR_id
+Type CH108DVBid Wire layer=b108hRegionDVB_id
+Type CH126DVBid Wire layer=b126hRegionDVB_id
+Type Skew10id Wire layer=logicSkew10_id
+Type diffSkewid Wire layer=diffSkew_id0
+
+
+Type TC1 Wire layer=tc1 orient=V
+Type TC2 Wire layer=tc2 orient=V
+
+
+
+Type M0 Wire layer=m0 orient=H
+Type M0pin Wire layer=m0_pin orient=H
+Type M0plug Plug layer=m0 orient=H
+Type M0kor Wire layer=m0_blockage orient=H
+
+Type M0P Wire layer=m0_pwr orient=H
+Type M0Ppin Wire layer=m0_pwr_pin orient=H
+Type M0Pkor Wire layer=m0_pwr_blockage orient=H
+Type VCPP Wire layer=vcp_pwr orient=H
+Type VCPD Wire layer=vcp orient=H
+Type VCPkor Wire layer=vcp_blockage orient=H
+
+Type DVB Wire layer=dvb orient=H
+Type DVBkor Wire layer=dvb_blockage orient=H
+Type M1P Wire layer=m1_pwr orient=H
+Type M2P Wire layer=m2_pwr orient=H
+
+Type BM0 Wire layer=bm0 orient=H
+Type BM0pin Wire layer=bm0_pin orient=H
+
+Type M1 Wire layer=m1 orient=V
+Type M1pin Wire layer=m1_pin orient=V
+Type M1pinplug Plug layer=m1_pin orient=V
+Type M1kor  LayoutObject layer=m1_blockage shape=polygon
+Group AllM1 {M1,M1pin,M1kor}
+
+Type M0B Wire layer=m0_color1 orient=H
+Type M0Bpin Wire layer=m0_color1_pin orient=H
+Type M0Bkor Wire layer=m0_color1_blockage orient=H
+Group AllM0B {M0B, M0Bpin, M0Bkor}
+Type M0C Wire layer=m0_color2 orient=H
+Type M0Cpin Wire layer=m0_color2_pin orient=H
+Type M0Ckor Wire layer=m0_color2_blockage orient=H
+Group AllM0C {M0C, M0Cpin, M0Ckor}
+Group AllM0 {M0B, M0Bpin, M0Bkor,M0C, M0Cpin, M0Ckor}
+
+
+
+
+Type M2 Wire layer=m2 orient=H
+Type M2pin Wire layer=m2_pin orient=H
+Type M2kor Wire layer=m2_blockage orient=H
+Type M2B Wire layer=m2_color1 orient=H
+Type M2Bpin Wire layer=m2_color1_pin orient=H
+Type M2Bkor Wire layer=m2_color1_blockage orient=H
+Group AllM2B {M2B, M2Bpin, M2Bkor}
+Type M2C Wire layer=m2_color2 orient=H
+Type M2Cpin Wire layer=m2_color2_pin orient=H
+Type M2Ckor Wire layer=m2_color2_blockage orient=H
+Group AllM2C {M2C, M2Cpin, M2Ckor}
+
+Type M3 Wire layer=m3 orient=H
+
+Type M4 Wire layer=m4 orient=H
+Type M4pin Wire layer=m4_pin orient=H
+Type M4kor Wire layer=m4_blockage orient=H
+
+Type SLIE0 Wire layer=sliE0_APRannotation orient=H
+Type SLIE1 Wire layer=sliE1_APRannotation orient=V
+Type SLIE2 Wire layer=sliE2_APRannotation orient=H
+
+Type SLIA0 Wire layer=sliA0_APRannotation orient=V
+
+Type ViaG Via layer=vg
+Type ViaT Via layer=vt
+Type V0 Via layer=v0
+Group AllVia {ViaT, ViaG, V0}
+Group DeviceVia {ViaT, ViaG}
+
+Type Vtkor Via layer=vt_blockage
+Type Vgkor Via layer=vg_blockage
+Type V0kor Via layer=v0_blockage
+Group AllViaT {ViaT, Vtkor}
+Group AllViaG {ViaG, Vgkor}
+Group AllV0 {V0, V0kor}
+
+Type ND LayoutObject layer=ndiff
+Type PD LayoutObject layer=pdiff
+Group DIFF {ND, PD}
+
+Type V1 Via layer=v1
+Type V1kor Via layer=v1_blockage
+Group AllM1Via {V0, V1}
+Group AllV1 {V1, V1kor}
+
+Type V0P Via layer=v0_pwr
+Type V1P Via layer=v1_pwr
+
+Type dvbPin Wire layer=dvb_pin orient=H
+
+Type stdCellLibrary Wire layer=stdCellLibrary_id
+Type devtypeA Wire layer=devTypeA_id
+Type devtypeB Wire layer=devTypeB_id
+
+;#Type 50ppregion Wire layer=B180h45pregion orient=H
+
+Type N1 LayoutObject layer=devflav_n1_id shape=polygon
+Type N2 LayoutObject layer=devflav_n2_id shape=polygon
+Type N3 LayoutObject layer=devflav_n3_id shape=polygon
+Type P1 LayoutObject layer=devflav_p1_id shape=polygon
+Type P2 LayoutObject layer=devflav_p2_id shape=polygon
+Type P3 LayoutObject layer=devflav_p3_id shape=polygon
+Group IDL {N1, N2, N3, P1, P2, P3}
+
+Type EMR Wire layer=emr
+
+Type MGC Wire layer=gva
+
+Type LvsMatch Wire layer=lvsExactMatch_id orient=H
+
+
+;this is a very specific operation
+Transform M0pin_adjust_length_0
+flip=false
+AND
+  c Cell | this.name == "k0tfuz400at1q04b5"
+  m1 M0C | this.net == "clk"
+  m AllM0C | this.intersects(m1)
+  let target_shape=rectangle(m.xl, m.yl, 9990, m.yh)
+  Modify m shape=target_shape
+  Modify m1 shape=target_shape
+
