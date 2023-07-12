@@ -113,6 +113,7 @@ Type TC2fill Wire layer=tc2_fill orient=V
 Type TCNflyover Wire layer=tcnFlyover_id orient=V
 Type TCR1 Wire layer=tcr1_id orient=V
 Type TCR2 Wire layer=tcr2_id orient=V 
+Type TCR Wire layer=tcr_id orient=V 
 
 ;Type DVBD Wire layer=dvb orient=H
 ;Type DVBkor Wire layer=dvb_blockage orient=H
@@ -1283,5 +1284,13 @@ AND
 
   Modify a_m2cpin layer=m2_pin  
 ;############################################################################################################
+;## Delete TCN 5:0 layers which are overlapping the TCR ID (81:582) {These are the EMR and stack nodes}
+;##
+;##
 ;############################################################################################################
-
+Transform  Delete_TCN_on_TCRID
+flip=flase
+AND
+  tid TCR
+  t TCN | this.intersects(tid)
+  Delete t
