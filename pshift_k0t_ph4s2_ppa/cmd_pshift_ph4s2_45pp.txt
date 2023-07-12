@@ -27,5 +27,5 @@ rm -rf conv_tc2_tcn_output_stms_45pp/
 #need testing below
 #placeholder
 #convert to RFX
-#rm -rf conv_tc2_tcn_output_stms_45pp/
-#~/Fruit/rungmo.sh output_stms_45pp/ conv_RFX_SPX.gmo
+rm -rf RFXwith_singleTCN_conv_tc2_tcn_output_stms_45pp
+~/Fruit/rungmo.sh conv_tc2_tcn_output_stms_45pp/ RFXwith_singleTCN.gmo
