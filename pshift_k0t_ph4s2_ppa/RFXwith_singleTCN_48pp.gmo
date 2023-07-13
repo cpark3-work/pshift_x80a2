@@ -26,11 +26,11 @@ Constant CH=1260
 
 Constant BM0_width=900
 
-Constant PL_ETE=140
-Constant PL_W=120
+Constant PL_ETE=180
+Constant PL_W=140
 
-Constant TCN_ETE=140
-Constant TCN_W=130
+Constant TCN_ETE=180
+Constant TCN_W=140
 
 Constant Z3_diff=470
 Constant Z2_diff=380
