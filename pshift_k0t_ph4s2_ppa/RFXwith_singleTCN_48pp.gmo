@@ -1,0 +1,1309 @@
+;## This GMO code is intended to convert 102CH EMR Laygen cells to cells suitable for RFX/SPX extraction.  
+;## It is assumed the starting cells have uncolored M0 and M2, no N-1 pins, correct and fully populated 
+;## TC1 = (304:0) and TC2 = (305:0), contain tcnFlyover = (482:50), and have not had any TC1 depopulated.
+;## 
+;## The code was started from 108CH_rdvb_ext_view_20220311.gmo, but has been extensively modified.
+;## It must be used with p1280_x80z.map to ensure all layers are available.
+;##
+;## Opens/issues:
+;## 1) Should I depoulate TC1 under TC2 on stacked nodes (in addition to TC1 over EMR done here)?
+;##
+;## (1) add MGC
+;## (2) add EMR on powerside of all transistors
+;## (2) add 2*2 box on VCC/VSSX BM0 and EMR intersection with port names like vcc_port1, vcc_port2, ?
+;## (3) for multiple M1 output cells (larger inv, nand2/nor2): name M1 ports like o1_port1, o1_port2, ....
+;## (4) TCN1 W =13nm and TCN2 W=10nm; EMR W=17nm;
+;## (5) depop TCN1 on power nodes only (no stack nodes)
+;## (6) change TCN2 to 5:250 (TCN fill) and TCN1 to 5:0 in RFX
+;## (7) change M0 and M2 to normal numbers, not color1 and color2. M0=55:0/2; M2=14:0/2
+
+
+;#######################################
+;## Constants                         ## 
+;#######################################
+Constant PP=480
+Constant CH=1260
+
+Constant BM0_width=900
+
+Constant PL_ETE=140
+Constant PL_W=120
+
+Constant TCN_ETE=140
+Constant TCN_W=130
+
+Constant Z3_diff=470
+Constant Z2_diff=380
+Constant Z1_diff=300
+
+Constant NP_Diff_Dist=160
+Constant NP_Diffz2_Dist=250
+Constant NP_Diffz1_Dist=330
+
+Constant M0_ETE=160
+Constant M0_W1=130  ;## M0C width; 126CH needs review
+Constant M0_W2=130  ;## M0B width; 126CH needs review
+Constant M0_space=120
+Constant Min_M0_length=515  ;## 3*PP/2-M0_ETE
+
+Constant M1_ETE=160
+Constant M1_W=250
+Constant M1_space=200
+Constant Min_M1_length=470
+
+Constant V1_inset_M1=25
+
+Constant M2_W1_ETE=450  ;## M2B ETE
+Constant M2_W2_ETE=280  ;## M2C_ETE
+Constant M2_W1=140  ;## M2B width; 126CH needs review
+Constant M2_W2=140  ;## M2C width; 126CH needs review
+Constant M2_space=110
+Constant Min_M2_W1_length=600  ;## M2B length
+Constant Min_M2_W2_length=600  ;## M2C length
+
+;## Sukru's Old Constants
+;Constant M1_Plug_Pitch=540
+;Constant Z1_diff=260
+;Constant Z2_diff=260
+;Constant M2_Plug_Pitch=2*PP
+;Constant Min_Devflav_W=3*PP
+
+
+
+;#######################################
+;## Layer Definitions                 ## 
+;#######################################
+Type BND LayoutObject layer=chkBoundary_boundary
+
+Type ND Wire layer=ndiff
+Type NDfill Wire layer=ndiff_fill
+Type PD Wire layer=pdiff
+Type PDfill Wire layer=pdiff_fill
+Group DIFF {ND, NDfill, PD, PDfill}
+
+Type PL Wire layer=poly orient=V
+Type PLpin Wire layer=poly_pin orient=V
+Type PLdummy Wire layer=poly_dummy orient=V
+Type PLfill Wire layer=poly_fill orient=V
+;Type PLplug Plug layer=poly orient=V
+
+Type PCR Wire layer=pcr_id orient=V
+
+;## This is metal gate cut associated with gva(drawing) = (385:0)
+Type MGC Wire layer=gva
+
+;## These have been replaced by: 
+;##   tcn(drawing) (5:0) --> tc1 (304:0)
+;##   tcn(fill) (5:250) --> tc2 (305:0)
+;##   tcn(pin) (5:2) --> tc2(pin) (305:2)
+;##
+;## Old definitions kept only for data integrity checking:
+Type TCN Wire layer=tcn orient=V
+Type TCNpin Wire layer=tcn_pin orient=V
+Type TCNfill Wire layer=tcn_fill orient=V
+;Type TCNplug Plug layer=tcn orient=V
+;## New definitions:
+Type TC1 Wire layer=tc1 orient=V
+Type TC1pin Wire layer=tc1_pin orient=V
+Type TC1fill Wire layer=tc1_fill orient=V
+Type TC2 Wire layer=tc2 orient=V
+Type TC2pin Wire layer=tc2_pin orient=V
+Type TC2fill Wire layer=tc2_fill orient=V
+
+Type TCNflyover Wire layer=tcnFlyover_id orient=V
+Type TCR1 Wire layer=tcr1_id orient=V
+Type TCR2 Wire layer=tcr2_id orient=V 
+Type TCR Wire layer=tcr_id orient=V 
+
+;Type DVBD Wire layer=dvb orient=H
+;Type DVBkor Wire layer=dvb_blockage orient=H
+;Type dvbPin Wire layer=dvb_pin orient=H
+;Type DVBP Wire layer=dvb_pwr orient=H
+
+Type EMR Wire layer=emr orient=V
+
+Type FTI Wire layer=fti orient=V
+;Type FTIfill Wire layer=fti_fill orient=V
+
+Type SDG Wire layer=sdGen orient=V
+
+Type ViaG Via layer=vg
+Type Vgkor Via layer=vg_blockage
+Type Vgpin Via layer=vg_pin
+
+Type ViaT Via layer=vt
+Type Vtkor Via layer=vt_blockage
+Type Vtpin Via layer=vt_pin
+
+;Type VCPD Wire layer=vcp orient=H
+;Type VCPkor Wire layer=vcp_blockage orient=H
+;Type VCPP Wire layer=vcp_pwr orient=H
+
+Type BM0 Wire layer=bm0 orient=H
+Type BM0kor Wire layer=bm0_blockage orient=H
+Type BM0pin Wire layer=bm0_pin orient=H
+
+Type M0 Wire layer=m0 orient=H
+Type M0kor Wire layer=m0_blockage orient=H
+Type M0pin Wire layer=m0_pin orient=H
+Type M0fill Wire layer=m0_fill orient=H
+;Type M0plug Plug layer=m0 orient=H
+
+Type M0B Wire layer=m0_color1 orient=H
+Type M0Bkor Wire layer=m0_color1_blockage orient=H
+Type M0Bpin Wire layer=m0_color1_pin orient=H
+Type M0Bfill Wire layer=m0_color1_fill orient=H
+
+Type M0C Wire layer=m0_color2 orient=H
+Type M0Ckor Wire layer=m0_color2_blockage orient=H
+Type M0Cpin Wire layer=m0_color2_pin orient=H
+Type M0Cfill Wire layer=m0_color2_fill orient=H
+
+;Type M0P Wire layer=m0_pwr orient=H
+;Type M0Pkor Wire layer=m0_pwr_blockage orient=H
+;Type M0Ppin Wire layer=m0_pwr_pin orient=H
+
+Type V0 Via layer=v0
+Type V0kor Via layer=v0_blockage
+Type V0pin Via layer=v0_pin
+;Type V0P Via layer=v0_pwr
+
+Type M1 Wire layer=m1 orient=V
+Type M1kor Wire layer=m1_blockage orient=V
+Type M1pin Wire layer=m1_pin orient=V
+;Type M1pinplug Plug layer=m1_pin orient=V
+
+Type M1P Wire layer=m1_pwr orient=H
+Type M2P Wire layer=m2_pwr orient=H
+
+Type V1 Via layer=v1
+Type V1kor Via layer=v1_blockage
+Type V1pin Via layer=v1_pin
+;Type V1P Via layer=v1_pwr
+
+Type M2 Wire layer=m2 orient=H
+Type M2kor Wire layer=m2_blockage orient=H
+Type M2pin Wire layer=m2_pin orient=H
+
+Type M2B Wire layer=m2_color1 orient=H
+Type M2Bkor Wire layer=m2_color1_blockage orient=H
+Type M2Bpin Wire layer=m2_color1_pin orient=H
+
+Type M2C Wire layer=m2_color2 orient=H
+Type M2Ckor Wire layer=m2_color2_blockage orient=H
+Type M2Cpin Wire layer=m2_color2_pin orient=H
+
+;Type M3 Wire layer=m3 orient=V
+;Type M3 Wire layer=m3 orient=H  Sukru's version...
+
+Type SLIE0 Wire layer=sliE0_APRannotation orient=H
+Type SLIE1 Wire layer=sliE1_APRannotation orient=V
+Type SLIE2 Wire layer=sliE2_APRannotation orient=H
+
+Type N1 LayoutObject layer=devflav_n1_id shape=polygon
+Type N2 LayoutObject layer=devflav_n2_id shape=polygon
+Type N3 LayoutObject layer=devflav_n3_id shape=polygon
+Type N5 LayoutObject layer=devflav_n5_id shape=polygon
+Type P1 LayoutObject layer=devflav_p1_id shape=polygon
+Type P2 LayoutObject layer=devflav_p2_id shape=polygon
+Type P3 LayoutObject layer=devflav_p3_id shape=polygon
+Type P5 LayoutObject layer=devflav_p5_id shape=polygon
+Group IDL {N1, N2, N3, N5, P1, P2, P3, P5}
+
+;## Various region id/types
+;Type ppregion LayoutObject layer=p45Region_id shape=polygon
+
+Type devTypeD Wire layer=devTypeD_id orient=H
+Type lvsExactMatch Wire layer=lvsExactMatch_id orient=H
+Type stdCellLibrary Wire layer=stdCellLibrary_id orient=H
+Type p45Region Wire layer=p45Region_id orient=H
+
+Type b108hRegionDVB Wire layer=b108hRegionDVB_id orient=H
+Type b108hRegionEMR Wire layer=b108hRegionEMR_id orient=H
+Type b102hRegionEMR Wire layer=b102hRegionEMR_id orient=H
+
+Group AllVia {ViaT, ViaG, V0}
+Group DeviceVia {ViaT, ViaG}
+Group M1allVia {V0, V1}
+
+Group BM0all {BM0, BM0kor, BM0pin}
+Group M0all {M0, M0kor, M0pin}
+Group M0Ball {M0B, M0Bkor, M0Bpin}
+Group M0Call {M0C, M0Ckor, M0Cpin}
+Group V0all {V0, V0kor, V0pin}
+Group M1all {M1, M1kor, M1pin}
+Group V1all {V1, V1kor, V1pin}
+Group M2all {M2, M2kor, M2pin}
+
+
+
+;#######################################
+;## Grid Definitions                  ## 
+;#######################################
+Grid ndiff_grid period=CH*2 offset=0 pitches={CH/2-NP_Diff_Dist/2-Z3_diff/2, 2*CH-(CH/2-NP_Diff_Dist/2-Z3_diff/2)} orient=H
+Grid pdiff_grid period=CH*2 offset=0 pitches={CH/2+NP_Diff_Dist/2+Z3_diff/2, 2*CH-(CH/2+NP_Diff_Dist/2+Z3_diff/2)} orient=H
+Grid poly_grid period=PP offset=0 orient=V
+Grid tcn_grid period=PP offset=0 pitches={PP/2} orient=V
+
+;## Cell height-related grids
+Grid midCH_grid period=CH offset=0 pitches={CH/2} orient=H
+Grid CH_grid period=CH offset=0 orient=H
+Grid QuarterCH_Grid period=CH*2 offset=0 pitches={CH/4, 2*CH-CH/4} orient=H
+Grid TriQuarterCH_Grid period=CH*2 offset=0 pitches={3*CH/4, 2*CH-3*CH/4} orient=H
+
+;## M0 grid definitions
+Grid M0C_y_grid period=CH offset=0 pitches={0,CH/2} orient=H
+Grid M0B_y_grid period=CH offset=0 pitches={M0_W1/2+M0_space+M0_W2/2,CH-(M0_W1/2+M0_space+M0_W2/2)} orient=H
+Grid M0all_y_grid period=CH offset=0 pitches={0,M0_W1/2+M0_space+M0_W2/2,CH/2,CH-(M0_W1/2+M0_space+M0_W2/2)} orient=H
+
+;## These M0B_x?_grid are crudely defined with an offset, so checks using them likely require flip=false
+;## M0B_xl_grid xl = 8,30.5,53,75.5,98,120.5,143,165.5,188,210.5,233,255.5,278,300.5,323,... 8+N*22.5 nm
+Grid M0B_xl_grid period=PP/2 offset=80 pitches={0} orient=V
+;## M0B_xh_grid xh = 82,104.5,127,149.5,172,194.5,217,239.5,262,284.5,307,329.5,352,374.5,397,... 82+N*22.5 nm
+Grid M0B_xh_grid period=PP/2 offset=820 pitches={0} orient=V
+
+;## These M0C_x?_grid are crudely defined with an offset, so checks using them likely require flip=false
+;## M0C_xl_grid xl = 8,30.5,53,75.5,98,120.5,143,165.5,188,210.5,233,255.5,278,300.5,323,... 8+N*22.5 nm
+Grid M0C_xl_grid period=PP/2 offset=80 pitches={0} orient=V
+;## M0B_xh_grid xh = 82,104.5,127,149.5,172,194.5,217,239.5,262,284.5,307,329.5,352,374.5,397,... 82+N*22.5 nm
+Grid M0C_xh_grid period=PP/2 offset=820 pitches={0} orient=V
+
+;## M1 grid definitions
+Grid M1_x_grid period=PP offset=0 pitches={PP/2} orient=V
+
+;## Centerlines of M1 spaces: 0, 450, 900, 1350, ...
+Grid M1_x_space_grid period=450 offset=0 orient=V
+
+;## M2B @ 15 wide, 11 space, 45 min length, 45 min ETE, 10 min V1 enclosure
+;## M2C @ 14 wide, 11 space, 62 min length, 28 min ETE, 15 min V1 enclosure
+;## M2B lines are @ y=0, CH/2, CH, and the M2C lines are @ the midpoints between these. 
+
+;## M2 grid definitions
+Grid M2B_y_grid period=CH offset=0 pitches={0,CH/2} orient=H
+Grid M2C_y_grid period=CH offset=0 pitches={M2_W1/2+M2_space+M2_W2/2,CH-(M2_W1/2+M2_space+M2_W2/2)} orient=H
+Grid M2all_y_grid period=CH offset=0 pitches={0,M2_W1/2+M2_space+M2_W2/2,CH/2,CH-(M2_W1/2+M2_space+M2_W2/2)} orient=H
+
+;## Centerlines of M2 spaces
+Grid M2_y_space_grid period=CH offset=0 pitches={M2_W1/2+M2_space/2, M2_W1/2+3*M2_space/2+M2_W2, CH-(M2_W1/2+3*M2_space/2+M2_W2), CH-(M2_W1/2+M2_space/2)} orient=H
+
+;## These M2B_x?_grid are crudely defined with an offset, so checks using them likely require flip=false
+;## M2B_xl_grid xl = 45,90,135,180,225,270,315,... 45+N*45 nm
+Grid M2B_xl_grid period=PP offset=450 pitches={0} orient=V
+;## M2B_xh_grid xh = 90,135,180,225,270,315,360,... 90+N*45 nm
+Grid M2B_xh_grid period=PP offset=900 pitches={0} orient=V
+
+;## These M2C_x?_grid are crudely defined with an offset, so checks using them likely require flip=false
+;## M2C_xl_grid xl = 36.5,81.5,126.5,171.5,216.5,261.5,306.5,... 36.5+N*45 nm
+Grid M2C_xl_grid period=PP offset=365 pitches={0} orient=V
+;## M2C_xh_grid xh = 98.5,143.5,188.5,233.5,278.5,323.5,368.5,... 98.5+N*45 nm
+Grid M2C_xh_grid period=PP offset=985 pitches={0} orient=V
+
+;## So far, this M3 grid definition is only used by code that converts Laygen cells to extraction cells
+Grid M3_grid period=PP offset=0 pitches={PP/2} orient=V
+
+;## Define grids for where poly can legally end relative to the CRL (Cell Reference Line)
+;## lower y edge of a poly ETE bisected by the CRL
+Grid Poly_CRL_ETE_yl_grid period=CH offset=0 pitches={CH-(PL_ETE/2)} orient=H
+;## upper y edge of a poly ETE bisected by the CRL 
+Grid Poly_CRL_ETE_yh_grid period=CH offset=0 pitches={PL_ETE/2} orient=H 
+
+;## Define grids for where poly can legally end relative to the DKA (Diffusion Keep Away)
+;## lower y edge of a poly ETE bisected by the DKA
+Grid Poly_DKA_ETE_yl_grid period=CH offset=0 pitches={(CH/2)-(PL_ETE/2)} orient=H
+;## upper y edge of a poly ETE bisected by the DKA
+Grid Poly_DKA_ETE_yh_grid period=CH offset=0 pitches={(CH/2)+(PL_ETE/2)} orient=H 
+
+;## Define grids for where BM0 can legally end relative to the CRL (Cell Reference Line)
+;## lower y edge of a BM0 centered on the CRL
+Grid BM0_yl_grid period=CH offset=0 pitches={CH-(BM0_width/2)} orient=H
+;## upper y edge of a BM0 centered on the CRL 
+Grid BM0_yh_grid period=CH offset=0 pitches={BM0_width/2} orient=H 
+
+
+
+;;#######################################
+;;## Transformations                   ## 
+;;#######################################
+;
+;;############################################################################################################
+;;## Add dummy devices left of LCB and right of RCB.
+;;## This code creates context TCN shapes on tcn (5:0) and tcn_pin (5:2) which are later modified.
+;;############################################################################################################
+;Transform Add_dummy_devices
+;flip=false
+;AND
+;  a_cell BND
+;
+;
+;  ;## Define shapes left of LCB
+;  let dummy_diff_left = rectangle(a_cell.xl-2*PP+PL_W/2, a_cell.yl, a_cell.xl-PL_W/2, a_cell.yh)
+;  let nmos_dummy_left = grid_lines(dummy_diff_left, ndiff_grid, Z3_diff/2)
+;  let pmos_dummy_left = grid_lines(dummy_diff_left, pdiff_grid, Z3_diff/2)
+;
+;  let poly_on_diff1 = rectangle(a_cell.xl-PP-PL_W/2, a_cell.yl+PL_ETE/2, a_cell.xl-PP+PL_W/2, a_cell.yh-PL_ETE/2)
+;
+;  let tcn1_on_diff1 = rectangle(a_cell.xl-3*PP/2-TCN_W/2, a_cell.yl+TCN_ETE/2, a_cell.xl-3*PP/2+TCN_W/2, a_cell.yh-TCN_ETE/2)
+;  let tcn2_on_diff1 = rectangle(a_cell.xl-PP/2-TCN_W/2, a_cell.yl+TCN_ETE/2, a_cell.xl-PP/2+TCN_W/2, a_cell.yh-TCN_ETE/2)
+;
+;  let devflavnidleft = grid_lines(rectangle(a_cell.xl-2*PP, a_cell.yl, a_cell.xl, a_cell.yh), QuarterCH_Grid, CH/4)
+;  let devflavpidleft = grid_lines(rectangle(a_cell.xl-2*PP, a_cell.yl, a_cell.xl, a_cell.yh), TriQuarterCH_Grid, CH/4)
+;
+;  let dummyid_left = nmos_dummy_left*poly_on_diff1 + pmos_dummy_left*poly_on_diff1
+;
+;
+;  ;## Define shapes right of RCB
+;  let dummy_diff_right = rectangle(a_cell.xh+PL_W/2, a_cell.yl, a_cell.xh+2*PP-PL_W/2, a_cell.yh)
+;  let nmos_dummy_right = grid_lines(dummy_diff_right, ndiff_grid, Z3_diff/2)
+;  let pmos_dummy_right = grid_lines(dummy_diff_right, pdiff_grid, Z3_diff/2)
+;
+;  let poly_on_diff2 = rectangle(a_cell.xh+PP-PL_W/2, a_cell.yl+PL_ETE/2, a_cell.xh+PP+PL_W/2, a_cell.yh-PL_ETE/2)
+;
+;  let tcn1_on_diff2 = rectangle(a_cell.xh+3*PP/2-TCN_W/2, a_cell.yl+TCN_ETE/2, a_cell.xh+3*PP/2+TCN_W/2, a_cell.yh-TCN_ETE/2)
+;  let tcn2_on_diff2 = rectangle(a_cell.xh+PP/2-TCN_W/2, a_cell.yl+TCN_ETE/2, a_cell.xh+PP/2+TCN_W/2, a_cell.yh-TCN_ETE/2)
+;
+;  let devflavnidright = grid_lines(rectangle(a_cell.xh, a_cell.yl, a_cell.xh+2*PP, a_cell.yh), QuarterCH_Grid, CH/4)
+;  let devflavpidright = grid_lines(rectangle(a_cell.xh, a_cell.yl, a_cell.xh+2*PP, a_cell.yh), TriQuarterCH_Grid, CH/4)
+;
+;  let dummyid_right = nmos_dummy_right*poly_on_diff2 + pmos_dummy_right*poly_on_diff2
+;
+;
+;  ;## Create the shapes
+;  Create ndiffleft layer=ndiff shape=nmos_dummy_left
+;  Create pdiffleft layer=pdiff shape=pmos_dummy_left
+;   
+;  Create ndiffright layer=ndiff shape=nmos_dummy_right
+;  Create pdiffright layer=pdiff shape=pmos_dummy_right
+;
+;  Create polyleft layer=poly net="poly_zone" shape=poly_on_diff1
+;  Create poly_dummy_id_left layer=poly_dummy shape=dummyid_left
+;
+;  Create polyright layer=poly net="poly_zone" shape=poly_on_diff2
+;  Create poly_dummy_id_right layer=poly_dummy shape=dummyid_right
+;
+;  Create tcnleft1 layer=tcn net="diffcon_zone" shape=tcn1_on_diff1
+;  Create tcnleft2 layer=tcn net="diffcon_zone" shape=tcn2_on_diff1
+;
+;  Create tcnright1 layer=tcn net="diffcon_zone" shape=tcn1_on_diff2
+;  Create tcnright2 layer=tcn net="diffcon_zone" shape=tcn2_on_diff2
+;
+;  Create polyleftpin layer=poly_pin net="poly_zone" shape=poly_on_diff1
+;  Create polyrightpin layer=poly_pin net="poly_zone" shape=poly_on_diff2
+;
+;  Create tcnleft1pin layer=tcn_pin net="diffcon_zone" shape=tcn1_on_diff1
+;  Create tcnleft2pin layer=tcn_pin net="diffcon_zone" shape=tcn2_on_diff1
+;
+;  Create tcnright1pin layer=tcn_pin net="diffcon_zone" shape=tcn1_on_diff2
+;  Create tcnright2pin layer=tcn_pin net="diffcon_zone" shape=tcn2_on_diff2
+;
+;  Create devflavpid_l layer=devflav_p2_id shape=devflavpidleft
+;  Create devflavnid_l layer=devflav_n2_id shape=devflavnidleft
+;
+;  Create devflavpid_r layer=devflav_p2_id shape=devflavpidright
+;  Create devflavnid_r layer=devflav_n2_id shape=devflavnidright
+;
+;
+;;############################################################################################################
+;;## Add diffusion, devflav, TCN, and poly zones above TCB and below BCB.
+;;## This code creates context TCN shapes on tcn (5:0) and tcn_pin (5:2) which are later modified.
+;;############################################################################################################
+;Transform Create_poly_zone
+;flip=false
+;AND
+;  Grid poly_dummy_trim_grid period=CH offset=0 pitches={0,CH/2} orient=H
+;  a_cell BND
+;  let poly_shapes = grid_lines(bloat(bloat(a_cell, CH/2-PL_ETE/2, V), 2*PP-PL_W/2, H), poly_grid, PL_W/2) - bloat(bloat(a_cell, PL_ETE/2, V), 2*PP-PL_W/2, H)
+;  let poly_dummy_shapes = poly_shapes - grid_lines(bloat(bloat(a_cell, CH/2, V), 2*PP-PL_W/2, H), poly_dummy_trim_grid, PL_ETE/2+10) 
+;
+;  Create poly_segments shape=poly_shapes net="poly_zone" layer=poly
+;  Create poly_pin_segments shape=poly_shapes net="poly_zone" layer=poly_pin
+;  Create poly_dummy_segments shape=poly_dummy_shapes layer=poly_dummy
+;
+;
+;Transform Create_TCN_zone
+;flip=false
+;AND
+;  a_cell BND
+;  let tcn_shapes = grid_lines(bloat(bloat(a_cell, CH/2-TCN_ETE/2, V), 2*PP-TCN_W/2, H), tcn_grid, TCN_W/2) - bloat(bloat(a_cell, TCN_ETE/2, V), 2*PP-TCN_W/2, H)
+;
+;  Create tcn_segments shape=tcn_shapes net="diffcon_zone" layer=tcn
+;  Create tcn_pin_segments shape=tcn_shapes net="diffcon_zone" layer=tcn_pin
+;
+;
+;Transform Create_TB_diffusion_devflav
+;flip=false
+;AND
+;  a_cell BND
+;  let nmos_shapes = grid_lines(bloat(bloat(a_cell, CH/2, V), 2*PP-PL_W/2, H), ndiff_grid, Z3_diff/2)- bloat(a_cell, 2*PP-PL_W/2, H)
+;  let pmos_shapes = grid_lines(bloat(bloat(a_cell, CH/2, V), 2*PP-PL_W/2, H), pdiff_grid, Z3_diff/2)- bloat(a_cell, 2*PP-PL_W/2, H)
+;  let nmos_devflav = bloat(bloat(nmos_shapes, 80, V), 60, H)
+;  let pmos_devflav = bloat(bloat(pmos_shapes, 80, V), 60, H)
+;
+;  Create nmos_dummy shape=nmos_shapes layer=ndiff
+;  Create pmos_dummy shape=pmos_shapes layer=pdiff
+;  Create nmos_svt shape=nmos_devflav layer=devflav_n2_id
+;  Create pmos_svt shape=pmos_devflav layer=devflav_p2_id
+;
+;
+;;############################################################################################################
+;;## Create context tcn_fill (5:250) from tcn (5:0).   
+;;## Note that this code assumes TCN shapes on layer tcn (5:0) and tcn(fill) (5:250) which are later modified.
+;;############################################################################################################
+;Transform Add_TC2
+;flip=false
+;AND
+;  a_tcn TCN
+;
+;  Create a_tcn2 shape=a_tcn layer=tcn_fill net=a_tcn.net
+;
+;
+;;## I believe this code is only needed for RDVB/DVB cells where some TC2 is outside the TBCB to connect to vcc/vssx.
+;;Transform Zone_TCNs
+;;flip=false
+;;AND
+;;  a_cell BND
+;;  a_tcn2 TCNfill | NOT a_cell.contains(this)
+;;  NOT a_tcn TCN | this.net.substr(0,1)=="v"
+;;                  this.intersects(a_tcn2)
+;;
+;;  Modify a_tcn_fill shape=a_tcn2 net="diffcon_zone" layer=tcn_fill  
+;
+;
+;Transform TCN_to_TC1
+;flip=false
+;AND
+;  a_tcn TCN
+;  let contacting_diff = Set{DIFF} | this.intersects(a_tcn)
+;  let enclS = contacting_diff.enclosure_ps(a_tcn,S)
+;  let enclN = contacting_diff.enclosure_ps(a_tcn,N)
+;  let tcnshape = a_tcn+enclS+enclN
+;  let target_shape = contacting_diff*tcnshape
+;
+;  Modify a_tcn shape=target_shape
+;
+;
+;############################################################################################################
+;## Create Metal Gate Cut (MGC) shapes aka gva = (385:0).
+;############################################################################################################
+Transform Add_metal_gate_cut
+AND
+  a_poly PL 
+  let target_shape = rectangle(a_poly.xl-(PP/2-PL_W/2), a_poly.yl, a_poly.xh+(PP/2-PL_W/2), a_poly.yl-PL_ETE)
+
+  Create a_gatecut shape=target_shape layer=gva
+
+  let target_shape1 = rectangle(a_poly.xl-(PP/2-PL_W/2), a_poly.yh, a_poly.xh+(PP/2-PL_W/2), a_poly.yh+PL_ETE)
+
+  Create a_gatecut shape=target_shape1 layer=gva
+
+;;## I can't envision a situation where this code from Sukru would be needed for 102CH.
+;;Transform Gate_Cut_Fix
+;;flip=false
+;;AND
+;;  a_cell BND
+;;  a_gatecut MGC
+;;  another_gatecut MGC | this.distance(a_gatecut, V) < CH/4
+;;                        this.yc != a_gatecut.yc
+;;                        this.xl == a_gatecut.xl
+;;                        this.xh == a_gatecut.xh
+;;  let targetcut = bounding_box(a_gatecut+another_gatecut)
+;;
+;;  Modify a_gatecut shape=targetcut
+;
+;
+;;############################################################################################################
+;;## Extend various shapes into the dummy devices left/right of LRCB and above/below TBCB.
+;;############################################################################################################
+;Transform Extend_sdgen_x
+;flip=false
+;AND
+;  a_cell BND
+;  a_sdgen SDG
+;  let extended_sdgen = bloat(a_sdgen, 2*PP, H)
+;
+;  Modify a_sdgen shape=extended_sdgen
+;
+;
+;;## Hack to convert sdgen PGD height from CH/2 to CH for single-high (SH) cells.
+;Transform Extend_sdgen_y
+;flip=false
+;AND
+;  a_cell BND | this.delta(V) == CH
+;  a_sdgen SDG | this.delta(V) == CH/2
+;  let extended_sdgen = bloat(a_sdgen, CH/2, N)
+;
+;  Modify a_sdgen shape=extended_sdgen
+;
+;
+;Transform Extend_p45Region
+;flip=false
+;AND
+;  a_cell BND
+;  a_p45Region p45Region
+;  let extended_p45Region = bloat(bloat(a_p45Region, 2*PP, H), CH/2, V)
+;
+;  Modify a_p45Region shape=extended_p45Region
+;
+;
+;;## Extend b102hRegionEMR if it exists
+;Transform Extend_b102hRegionEMR
+;flip=false
+;AND
+;  a_cell BND
+;  a_b102hRegionEMR b102hRegionEMR
+;  let extended_b102hRegionEMR = bloat(bloat(a_b102hRegionEMR, 2*PP, H), CH/2, V)
+;
+;  Modify a_b102hRegionEMR shape=extended_b102hRegionEMR
+;
+;
+;;## Extend b108hRegionEMR if it exists and then remap it to b102hRegionEMR
+;Transform Extend_remap_b108hRegionEMR
+;flip=false
+;AND
+;  a_cell BND
+;  a_b108hRegionEMR b108hRegionEMR
+;  let extended_b108hRegionEMR = bloat(bloat(a_b108hRegionEMR, 2*PP, H), CH/2, V)
+;
+;  Modify a_b108hRegionEMR shape=extended_b108hRegionEMR layer=b102hRegionEMR_id
+;
+;
+;;############################################################################################################
+;;## Create devTypeD(id) (81:198) shapes which are line-on-line to all poly and diff intersections.
+;;############################################################################################################
+;Transform Make_devTypeD
+;flip=false
+;AND
+;  a_poly PL
+;  let intersecting_diff = Set{DIFF} | this.intersects(a_poly)
+;  let target_shape = intersecting_diff*a_poly
+;
+;  Create a_devTypeD layer=devTypeD_id shape=target_shape
+;
+;
+;;############################################################################################################
+;;## Add M0 context shapes and create 2x2 pin shapes.
+;;############################################################################################################
+;
+;
+;;## M0 grid definitions for reference - These are my grid definitions with w1=14nm (c) and w2=13nm (b)
+;;Grid M0C_y_grid period=CH offset=0 pitches={0,CH/2} orient=H
+;;Grid M0B_y_grid period=CH offset=0 pitches={M0_W1/2+M0_space+M0_W2/2,CH-(M0_W1/2+M0_space+M0_W2/2)} orient=H
+;;Grid M0all_y_grid period=CH offset=0 pitches={0,M0_W1/2+M0_space+M0_W2/2,CH/2,CH-(M0_W1/2+M0_space+M0_W2/2)} orient=H
+;
+;
+;Transform Add_M0_context
+;AND
+;  a_cell BND
+;  let m0w1_pattern = grid_lines(bloat(bloat(a_cell, 2*PP-M0_ETE/2, H), M0_W1/2+M0_space+M0_W2, V), M0C_y_grid, M0_W1/2) - bloat(bloat(a_cell, M0_ETE/2, H), M0_W1/2, V)
+;  let m0w2_pattern = grid_lines(bloat(bloat(a_cell, 2*PP-M0_ETE/2, H), M0_W1/2+M0_space+M0_W2, V), M0B_y_grid, M0_W2/2) - bloat(bloat(a_cell, M0_ETE/2, H), M0_W1/2, V)
+;
+;  Create m0fillw1 layer=m0 net="metal0_zone" shape=m0w1_pattern
+;  Create m0pinfillw1 layer=m0_pin net="metal0_zone" shape=m0w1_pattern
+;  Create m0fillw2 layer=m0 net="metal0_zone" shape=m0w2_pattern
+;  Create m0pinfillw2 layer=m0_pin net="metal0_zone" shape=m0w2_pattern
+;
+;
+;Transform M0_2by2_left
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0pin M0pin | this.net != "metal0_zone"
+;  let all_possible_m0_2x2 = array(rectangle(-10, -10, 10, 10), M0all_y_grid, M1_x_grid, a_m0pin)
+;  let all_possible_m0_2x2_fractured = all_possible_m0_2x2.fracture(H)
+;
+;  bounding_box(all_possible_m0_2x2).xh <= a_cell.xc
+;  let min_dist = a_cell.c.distance(all_possible_m0_2x2.bounding_box, H)
+;  let candidate = Element all_possible_m0_2x2_fractured | this.distance(a_cell.c, H) == min_dist
+;
+;  Modify a_m0pin shape=candidate
+;
+;
+;Transform M0_2by2_right
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0pin M0pin | this.net != "metal0_zone"
+;  let all_possible_m0_2x2 = array(rectangle(-10, -10, 10, 10), M0all_y_grid, M1_x_grid, a_m0pin)
+;  let all_possible_m0_2x2_fractured = all_possible_m0_2x2.fracture(H)
+;
+;  bounding_box(all_possible_m0_2x2).xl >= a_cell.xc
+;  let min_dist = a_cell.c.distance(all_possible_m0_2x2.bounding_box, H)
+;  let candidate = Element all_possible_m0_2x2_fractured | this.distance(a_cell.c, H) == min_dist
+;
+;  Modify a_m0pin shape=candidate  
+;
+;
+;Transform M0_2by2_across_cell_center
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0pin M0pin | this.net != "metal0_zone"
+;                  this.xl < a_cell.xc
+;                  this.xh > a_cell.xc
+;
+;  let all_possible_m0_2x2 = array(rectangle(-10, -10, 10, 10), M0all_y_grid, M1_x_grid, a_m0pin)
+;
+;  bounding_box(all_possible_m0_2x2).xh > a_cell.xc
+;  bounding_box(all_possible_m0_2x2).xl < a_cell.xc
+;
+;  let all_possible_m0_2x2_reduced = all_possible_m0_2x2 * rectangle(a_cell.xc-PP-10, a_cell.yl, a_cell.xc+PP+10, a_cell.yh)
+;  let all_possible_m0_2x2_fractured = all_possible_m0_2x2_reduced.fracture(H) 
+;
+;  let candidate = Element all_possible_m0_2x2_fractured | this.xl == bounding_box(all_possible_m0_2x2_reduced).xl
+;
+;  Modify a_m0pin shape=candidate
+;
+;
+;;## Shift 2x2s to place their centers on grid since above transforms always place lower left corner on grid
+;Transform Shift_M0_2by2
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0pin M0pin | this.net != "metal0_zone"
+;                  this.delta(V) == 20
+;                  this.delta(V) == 20
+;  let candidate = rectangle(a_m0pin.xl-10, a_m0pin.yl-10, a_m0pin.xh-10, a_m0pin.yh-10)
+;
+;  Modify a_m0pin shape=candidate
+;
+;
+;;############################################################################################################
+;;## Add M1 context shapes and create 2x2 pin shapes.
+;;############################################################################################################
+;Transform Add_M1_context
+;flip=false
+;AND
+;  a_cell BND
+;  let all_m1=Set{M1}
+;  let m1_pattern = grid_lines(bloat(shrink(a_cell, M1_ETE/2, V), 2*PP, H), M1_x_grid, M1_W/2)- bloat(all_m1, M1_ETE, V) 
+;  let m1_pattern_refined = Subset m1_pattern | this.delta(V) >= Min_M1_length
+;
+;  Create m1fill layer=m1 net="metal1_zone" shape=m1_pattern_refined
+;  Create m1pinfill layer=m1_pin net="metal1_zone" shape=m1_pattern_refined
+;
+;
+;Transform M1_2by2
+;flip=false
+;AND
+;  a_cell BND
+;  a_m1pin M1pin | this.net != "metal1_zone"
+;  let all_possible_m1_2x2 = array(rectangle(-10, -10, 10, 10), M1_x_grid, M2all_y_grid, a_m1pin)
+;  let all_possible_m1_2x2_fractured = all_possible_m1_2x2.fracture(V)
+;  let min_dist = a_cell.c.distance(all_possible_m1_2x2.bounding_box, V)
+;  let candidate = Element all_possible_m1_2x2_fractured | this.distance(a_cell.c, V) == min_dist
+;
+;  Modify a_m1pin shape=candidate
+;
+;
+;;## Shift 2x2s to place their centers on grid since above transform always places lower left corner on grid
+;Transform Shift_M1_2by2
+;flip=false
+;AND
+;  a_cell BND
+;  a_m1pin M1pin | this.net != "metal1_zone"
+;                  this.delta(V) == 20
+;                  this.delta(V) == 20
+;  let candidate = rectangle(a_m1pin.xl-10, a_m1pin.yl-10, a_m1pin.xh-10, a_m1pin.yh-10)
+;
+;  Modify a_m1pin shape=candidate
+;
+;
+;;############################################################################################################
+;;## Add M2 context shapes and create 2x2 pin shapes.
+;;############################################################################################################
+;
+;
+;;## M2 grid definitions for reference - These are my grid definitions with w1=15nm (b) and w2=14nm (b)
+;;Grid M2B_y_grid period=CH offset=0 pitches={0,CH/2} orient=H
+;;Grid M2C_y_grid period=CH offset=0 pitches={M2_W1/2+M2_space+M2_W2/2,CH-(M2_W1/2+M2_space+M2_W2/2)} orient=H
+;;Grid M2all_y_grid period=CH offset=0 pitches={0,M2_W1/2+M2_space+M2_W2/2,CH/2,CH-(M2_W1/2+M2_space+M2_W2/2)} orient=H
+;
+;
+;Transform Add_M2_context
+;flip=false
+;AND
+;  a_cell BND
+;  let all_m2 = Set{M2}
+;  let m2w1_pattern = grid_lines(a_cell, M2B_y_grid, M2_W1/2) - bloat(all_m2, M2_W1_ETE, H) 
+;  let m2w1_pattern_refined = Subset m2w1_pattern | this.delta(H) >= Min_M2_W1_length
+;  let m2w2_pattern = grid_lines(a_cell, M2C_y_grid, M2_W2/2) - bloat(all_m2, M2_W2_ETE, H) 
+;  let m2w2_pattern_refined = Subset m2w2_pattern | this.delta(H) >= Min_M2_W2_length
+;
+;  Create m2fillw1 layer=m2 net="metal2_zone" shape=m2w1_pattern_refined
+;  Create m2pinfillw1 layer=m2_pin net="metal2_zone" shape=m2w1_pattern_refined  
+;  Create m2fillw2 layer=m2 net="metal2_zone" shape=m2w2_pattern_refined
+;  Create m2pinfillw2 layer=m2_pin net="metal2_zone" shape=m2w2_pattern_refined 
+;
+;
+;Transform M2_2by2_left
+;flip=false
+;AND
+;  a_cell BND
+;  let a_rectangle = rectangle(a_cell.xl, a_cell.yl-10, a_cell.xh, a_cell.yl) 
+;  a_m2pin M2pin | this.net != "metal2_zone"
+;  let all_possible_m2_2x2 = array(rectangle(-10, -10, 10, 10), M2all_y_grid, M3_grid, a_m2pin)
+;  let all_possible_m2_2x2_fractured = all_possible_m2_2x2.fracture(H)
+;
+;  bounding_box(all_possible_m2_2x2).xh <= a_cell.xc
+;  let min_dist = a_cell.c.distance(all_possible_m2_2x2.bounding_box, H)
+;; let candidate = Element all_possible_m2_2x2_fractured | this.distance(a_cell.c, H) == min_dist
+;  let candidate = Element all_possible_m2_2x2_fractured | this.distance(a_rectangle.c, H) == min_dist
+;
+;  Modify a_m2pin shape=candidate
+;
+;
+;Transform M2_2by2_right
+;flip=false
+;AND
+;  a_cell BND
+;  let a_rectangle = rectangle(a_cell.xl, a_cell.yl-10, a_cell.xh, a_cell.yl) 
+;  a_m2pin M2pin | this.net != "metal2_zone"
+;  let all_possible_m2_2x2 = array(rectangle(-10, -10, 10, 10), M2all_y_grid, M3_grid, a_m2pin)
+;  let all_possible_m2_2x2_fractured = all_possible_m2_2x2.fracture(H)
+;
+;  bounding_box(all_possible_m2_2x2).xl >= a_cell.xc
+;  let min_dist = a_cell.c.distance(all_possible_m2_2x2.bounding_box, H)
+;; let candidate = Element all_possible_m2_2x2_fractured | this.distance(a_cell.c, H) == min_dist
+;  let candidate = Element all_possible_m2_2x2_fractured | this.distance(a_rectangle.c, H) == min_dist
+;
+;  Modify a_m2pin shape=candidate
+;
+;
+;Transform M2_2by2_across_cell_center
+;flip=false
+;AND
+;  a_cell BND
+;; let a_rectangle = rectangle(a_cell.xl, a_cell.yl-10, a_cell.xh, a_cell.yl) 
+;  a_m2pin M2pin | this.net != "metal2_zone"
+;                  this.xl < a_cell.xc
+;                  this.xh > a_cell.xc
+;
+;  let all_possible_m2_2x2 = array(rectangle(-10, -10, 10, 10), M2all_y_grid, M3_grid, a_m2pin)
+;
+;  bounding_box(all_possible_m2_2x2).xh > a_cell.xc
+;  bounding_box(all_possible_m2_2x2).xl < a_cell.xc
+;
+;  let all_possible_m2_2x2_reduced = all_possible_m2_2x2* rectangle(a_cell.xc-PP-10, a_cell.yl, a_cell.xc+PP+10, a_cell.yh) 
+;  let all_possible_m2_2x2_fractured = all_possible_m2_2x2_reduced.fracture(H) 
+;
+;  let candidate = Element all_possible_m2_2x2_fractured | this.xl == bounding_box(all_possible_m2_2x2_reduced).xl
+;
+;  Modify a_m2pin shape=candidate
+;
+;
+;;## Shift 2x2s to place their centers on grid since above transforms always place lower left corner on grid
+;Transform Shift_M2_2by2
+;flip=false
+;AND
+;  a_cell BND
+;  a_m2pin M2pin | this.net != "metal2_zone"
+;                  this.delta(V) == 20
+;                  this.delta(V) == 20
+;  let candidate = rectangle(a_m2pin.xl-10, a_m2pin.yl-10, a_m2pin.xh-10, a_m2pin.yh-10)
+;
+;  Modify a_m2pin shape=candidate
+;
+;
+;;############################################################################################################
+;;## Add M0B fill.
+;;############################################################################################################
+;
+;
+;;## M0 grid definitions for reference - These are my grid definitions with w1=14nm (c) and w2=13nm (b)
+;;Grid M0C_y_grid period=CH offset=0 pitches={0,CH/2} orient=H
+;;Grid M0B_y_grid period=CH offset=0 pitches={M0_W1/2+M0_space+M0_W2/2,CH-(M0_W1/2+M0_space+M0_W2/2)} orient=H
+;;Grid M0all_y_grid period=CH offset=0 pitches={0,M0_W1/2+M0_space+M0_W2/2,CH/2,CH-(M0_W1/2+M0_space+M0_W2/2)} orient=H
+;
+;
+;Transform M0B_half_fill
+;flip=false
+;AND
+;  a_cell BND
+;  let all_m0=Set{M0}
+;  let m0bfill = grid_lines(bloat(shrink(a_cell, M0_ETE/2, H), M0_W2/2, V), M0B_y_grid, M0_W2/2) - bloat(all_m0, M0_ETE, H)
+;
+;  Create m0_fill layer=m0 shape=m0bfill net="m0_float"
+;
+;
+;Transform M0_active_extension_right
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0 M0 |  this.delta(H) < Min_M0_length
+;             a_cell.contains(a_m0)
+;             this.net.substr(0,8) == "m0_float"
+;  another_m0 M0 | this.delta(H) >= Min_M0_length
+;                  this.yc == a_m0.yc
+;                  this.xh == a_m0.xl-M0_ETE
+;                  a_cell.contains(another_m0)
+;  let target_shape = bounding_box(a_m0+another_m0)
+;
+;  Modify another_m0 shape=target_shape
+;  Delete a_m0
+;
+;
+;Transform M0_active_extension_left
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0 M0 |  this.delta(H) < Min_M0_length
+;             a_cell.contains(a_m0)
+;             this.net.substr(0,8) == "m0_float"
+;  another_m0 M0 | this.delta(H) >= Min_M0_length
+;                  this.yc == a_m0.yc
+;                  this.xl == a_m0.xh+M0_ETE
+;                  a_cell.contains(another_m0)
+;  let target_shape = bounding_box(a_m0+another_m0)
+;
+;  Modify another_m0 shape=target_shape
+;  Delete a_m0
+;
+;
+;;############################################################################################################
+;;## Create BM0 2x2 pin shapes (366:2) and give them unique names.  Remove original rail-sized BM0pin shapes.
+;;############################################################################################################
+
+Transform delete_BM0_2x2_at_edges
+flip=false
+AND
+  a_cell Cell
+  a_bm0pin BM0pin | this.yc==a_cell.yh
+  Delete a_bm0pin
+  a_bm0pin1 BM0pin | this.yc==a_cell.yl
+  Delete a_bm0pin1
+  a_bm0pin2 BM0pin | this.xc==a_cell.xl-740
+  Delete a_bm0pin2
+  a_bm0pin3 BM0pin | this.xc==a_cell.xh+740
+  Delete a_bm0pin3
+
+Transform delete_BM0_2x2_at_edgesold
+flip=false
+AND
+  a_cell Cell
+  a_bm0pin4 BM0pin | this.xc==a_cell.xl-130
+  Delete a_bm0pin4
+  a_bm0pin5 BM0pin | this.xc==a_cell.xh+130
+  Delete a_bm0pin5
+
+Transform Adjust_BM0_extension
+flip = false
+AND
+  a_cell Cell
+  a_bm0 BM0
+  let new_bm0 = rectangle(a_cell.xl-750, a_bm0.yl, a_cell.xh+750, a_bm0.yh)
+  Modify a_bm0 shape=new_bm0
+  
+Transform BM0_2x2_at_edges
+flip=false
+AND
+  a_bm0 BM0
+  let target_bm0_edge_2x2 = rectangle(a_bm0.xl+50, a_bm0.yc-10, a_bm0.xl+70, a_bm0.yc+10) + rectangle(a_bm0.xh-70, a_bm0.yc-10, a_bm0.xh-50, a_bm0.yc+10)
+  Create a_bm0pin layer=bm0_pin shape=target_bm0_edge_2x2 net=a_bm0.net
+
+;Transform BM0_2x2
+;flip=false
+;AND
+;  a_emr EMR
+;  a_cell BND | this.contains(a_emr, touch=false) 
+;  let new_bm0_pin = rectangle(a_emr.xc-10, a_emr.yc-10, a_emr.xc+10, a_emr.yc+10)
+;
+;  Create a_bm0_2x2 layer=bm0_pin shape=new_bm0_pin net=a_emr.net
+;
+;
+Transform BM0pin_unique_names
+flip=false
+AND
+  a_bm0pin BM0pin
+  another_bm0pin BM0pin | this.net == a_bm0pin.net
+                          OR
+                            this.xl != a_bm0pin.xl
+                            this.yl != a_bm0pin.yl
+  let newnet = another_bm0pin.net + "_port_" + abs(coordToInt(another_bm0pin.xl)) + "dot" + abs(coordToInt(another_bm0pin.yl))
+
+  Modify another_bm0pin net=newnet
+
+
+;Transform Remove_original_BM0_pins
+;flip=false
+;AND
+;  a_bm0pin BM0pin | this.delta(V) == BM0_width
+;
+;  Delete a_bm0pin 
+
+
+;############################################################################################################
+;## Adjust EMR (260:0) width from 13nm to 17nm.  Adjust context TC2 aka TCN_fill (5:250) and TC2_pin aka 
+;## TCN_pin (5:2) widths from 13nm to 10nm.  Adjust cell TC2 (305:0) width from 13nm to 10nm.  These 
+;## modifications are needed for RFX/SPX extraction per Nischal.
+;##
+;## Note that at this point, we still have context TC1 aka TCN_drawing on (5:0) and cell TC1 on (304:0), and 
+;## context TC2 on (5:0) and (5:2) and cell TC2 on (305:0).  These will be merged later. 
+;############################################################################################################
+Transform Adjust_EMR_width
+flip = false
+AND
+  a_emr EMR
+  let new_emr = rectangle(a_emr.xc-85, a_emr.yl, a_emr.xc+85, a_emr.yh)
+
+  Modify a_emr shape=new_emr
+
+
+;Transform Adjust_context_TC2_width
+;flip = false
+;AND
+;  a_tc2 TCNfill
+;  let new_tc2 = rectangle(a_tc2.xc-50, a_tc2.yl, a_tc2.xc+50, a_tc2.yh)
+;
+;  Modify a_tc2 shape=new_tc2
+;
+;
+;Transform Adjust_context_TC2pin_width
+;flip = false
+;AND
+;  a_tc2pin TC2pin
+;  let new_tc2pin = rectangle(a_tc2pin.xc-50, a_tc2pin.yl, a_tc2pin.xc+50, a_tc2pin.yh)
+;
+;  Modify a_tc2pin shape=new_tc2pin
+;
+;
+;Transform Adjust_cell_TC2_width
+;flip = false
+;AND
+;  a_tc2 TC2
+;  let new_tc2 = rectangle(a_tc2.xc-50, a_tc2.yl, a_tc2.xc+50, a_tc2.yh)
+;
+;  Modify a_tc2 shape=new_tc2
+
+
+;############################################################################################################
+;## Uniquify pin names
+;############################################################################################################
+;Transform polyzone_unique_names
+;flip=false
+;AND
+;  a_cell BND
+;  a_poly PL
+;  another_poly PL | this.net == a_poly.net
+;                    this.net.substr(0, 9) == "poly_zone"
+;                    OR
+;                      this.xl != a_poly.xl
+;                      this.yl != a_poly.yl
+;  a_polypin PLpin | this.intersects(another_poly)
+;  let newnet = another_poly.net + "_" + abs(coordToInt(another_poly.xl)) + "dot" + abs(coordToInt(another_poly.yl))
+;
+;  Modify another_poly net=newnet
+;  Modify a_polypin net=newnet
+;
+;
+;Transform diffconzone_unique_names
+;flip=false
+;AND
+;  a_cell BND
+;  a_tcn2 TCNfill
+;  another_tcn2 TCNfill | this.net == a_tcn2.net
+;                         this.net.substr(0, 12) == "diffcon_zone"
+;                         OR
+;                           this.xl != a_tcn2.xl
+;                           this.yl != a_tcn2.yl
+;  a_tcn2pin TCNpin | this.intersects(another_tcn2)
+;  all_contacting_tcn1 TCN  | this.intersects(another_tcn2)
+;  ;let all_contacting_tcn1 = Set{TCN} | this.intersects(another_tcn2)
+;  let newnet = another_tcn2.net + "_" + abs(coordToInt(another_tcn2.xl)) + "dot" + abs(coordToInt(another_tcn2.yl))
+;
+;  Modify another_tcn2 net=newnet
+;  Modify a_tcn2pin net=newnet
+;  Modify all_contacting_tcn1 net=newnet
+;
+;
+;Transform M0_unique_names
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0 M0 | OR
+;              this.net == "m0_float"
+;              this.net == "metal0_zone"
+;  let newnet = a_m0.net + "_" + abs(coordToInt(a_m0.xl)) + "dot" + abs(coordToInt(a_m0.yl))
+;
+;  Modify a_m0 net=newnet
+;
+;
+;Transform M0pin_unique_names
+;flip=false
+;AND
+;  a_cell BND
+;  a_m0 M0pin | OR
+;                 this.net == "m0_float"
+;                 this.net == "metal0_zone"
+;  let newnet = a_m0.net + "_" + abs(coordToInt(a_m0.xl)) + "dot" + abs(coordToInt(a_m0.yl))
+;
+;  Modify a_m0 net=newnet
+;
+;
+;Transform M1pin_zone_unique_names
+;flip=false
+;AND
+;  a_cell BND
+;  a_m1pin M1pin | this.net == "metal1_zone"
+;  another_m1pin M1pin | this.net == a_m1pin.net
+;                        OR
+;                          this.xl != a_m1pin.xl
+;                          this.yl != a_m1pin.yl
+;  a_m1 M1 | this.intersects(another_m1pin)
+;  let newnet = another_m1pin.net + "_" + abs(coordToInt(another_m1pin.xl)) + "dot" + abs(coordToInt(another_m1pin.yl))
+;
+;  Modify another_m1pin net=newnet
+;  Modify a_m1 net=newnet
+;
+;
+Transform M1pin_MustJoin_unique_names
+flip=false
+AND
+  a_cell BND
+  a_m1pin M1pin | this.net != "metal1_zone"
+  another_m1pin M1pin | this.net == a_m1pin.net
+                        OR
+                          this.xl != a_m1pin.xl
+                          this.yl != a_m1pin.yl
+  a_m1 M1 | this.intersects(another_m1pin)
+  let newnet = another_m1pin.net + "_port_" + abs(coordToInt(another_m1pin.xl)) + "dot" + abs(coordToInt(another_m1pin.yl))
+
+  Modify another_m1pin net=newnet
+  Modify a_m1 net=newnet
+
+
+;Transform M2pin_unique_names
+;flip=false
+;AND
+;  a_m2pin M2pin
+;  another_m2pin M2pin | this.net == a_m2pin.net
+;                        OR
+;                          this.xl != a_m2pin.xl
+;                          this.yl != a_m2pin.yl
+;  a_m2 M2 | this.intersects(another_m2pin)
+;  let newnet = another_m2pin.net + "_" + abs(coordToInt(another_m2pin.xl)) + "dot" + abs(coordToInt(another_m2pin.yl))
+;
+;  Modify another_m2pin net=newnet
+;  Modify a_m2 net=newnet
+;
+;
+;;############################################################################################################
+;;## At this point, the context contains old TCN shapes and the cell contains new TC1/TC2 shapes.  Move TCN 
+;;## (5:0) to TC1 (304:0), move TCNfill (5:250) to TC2 (305:0), and move TCNpin (5:2) to TC2pin (305:2).
+;;## After this, all TC1 is (304:0), all TC2 is (305:0), and all TC2pin is (305:2). 
+;;############################################################################################################
+;Transform Move_TC1_to_TCN
+;flip=false
+;AND
+;  a_tcn TC1
+;
+;  Modify a_tcn layer=tcn
+;
+;Transform Move_TC2_to_TCNfill
+;flip=false
+;AND
+;  a_tcnfill TC2
+;
+;  Modify a_tcnfill layer=tcn_fill
+;
+;Transform Move_TC2pin_to_TCNpin
+;flip=false
+;AND
+;  a_tcnpin TC2pin
+;
+;  Modify a_tcnpin layer=tcn_pin
+;  
+;Transform Move_TCN_to_TC1
+;flip=false
+;AND
+;  a_tcn TCN
+;
+;  Modify a_tcn layer=tc1 
+;
+;
+;Transform Move_TCNfill_to_TC2
+;flip=false
+;AND
+;  a_tcnfill TCNfill
+;
+;  Modify a_tcnfill layer=tc2 
+;
+;
+;Transform Move_TCNpin_to_TC2pin
+;flip=false
+;AND
+;  a_tcnpin TCNpin
+;
+;  Modify a_tcnpin layer=tc2_pin 
+;
+;
+;;############################################################################################################
+;;## Remove TC1 (304:0) shapes inside the cell boundary associated with any TCNflyover (482:50).
+;;############################################################################################################
+;Transform Depop_TC1_for_TCNflyover
+;flip = false
+;AND
+;  a_tcnflyover TCNflyover
+;  a_CB BND | this.contains(a_tcnflyover, touch=false) 
+;  a_tc1 TC1 | this.intersects(a_tcnflyover)
+;
+;  Delete a_tc1
+;
+;
+;############################################################################################################
+;## Find EMR shapes fully inside cell boundary and use them to find the TC1 shapes to be removed (depopped)
+;## and the TC2 shapes to have their netnames updated to:
+;## tcn2_float_<x coordinate of LL corner in Angstroms>dot<y coordinate of LL corner in Angstroms>.
+;## In these cases, the TC1 shapes have vcc or vssx netnames, but the TC2 often do not have any netnames, 
+;## so ensure the associated TC2 doesn't connect to another TC1 or a ViaT that might indicate it is routing
+;## power elsewhere and/or is associated with a front-side power pin.
+;############################################################################################################
+Transform Depop_TC1_update_TC2
+flip = false
+AND
+  a_emr EMR
+  a_CB BND | this.contains(a_emr, touch=false) 
+  a_tc1 TCN | this.intersects(a_emr)
+  a_tc2 TCNfill | this.intersects(a_emr)
+  NOT another_tc1 TCN | this.intersects(a_tc2)
+  NOT a_viat ViaT | this.intersects(a_tc2) 
+  let newnet = "tcn2_float_" + abs(coordToInt(a_tc2.xl)) + "dot" + abs(coordToInt(a_tc2.yl))
+
+  Modify a_tc2 net=newnet
+  Delete a_tc1
+
+Transform Depop_TCN
+flip = false
+AND
+  a_emr EMR
+  a_CB BND | this.contains(a_emr, touch=false) 
+  a_tc1 TCN | this.intersects(a_emr)
+;  a_tc2 TCNfill | this.intersects(a_emr)
+;  NOT another_tc1 TCN | this.intersects(a_tc2)
+;  NOT a_viat ViaT | this.intersects(a_tc2) 
+;  let newnet = "tcn2_float_" + abs(coordToInt(a_tc2.xl)) + "dot" + abs(coordToInt(a_tc2.yl))
+
+;  Modify a_tc2 net=newnet
+  Delete a_tc1
+
+;;############################################################################################################
+;;## Resize vias to align with X80A DRs:
+;;##
+;;## 1) Resize ViaT (31:0) from 13x13 and 13x14 to 13x13 only (OGDxPGD).
+;;## 2) Resize ViaG (32:0) from 12x13 and 12x14 to 12x13 only (OGDxPGD).
+;;## 3) Resize V1all (43:*) from 20x14 and 20x15 to 20x14 only (OGDxPGD).
+;;##
+;;############################################################################################################
+;Transform ViaT_size
+;flip=false
+;AND
+;  a_viat ViaT 
+;  let new_viat = rectangle(a_viat.xl, a_viat.yc-65, a_viat.xh, a_viat.yc+65)
+;
+;  Modify a_viat shape=new_viat
+;
+;
+;Transform ViaG_size
+;flip=false
+;AND
+;  a_viag ViaG 
+;  let new_viag = rectangle(a_viag.xl, a_viag.yc-65, a_viag.xh, a_viag.yc+65)
+;
+;  Modify a_viag shape=new_viag
+;
+;
+;Transform V1_size
+;flip=false
+;AND
+;  a_v1 V1all 
+;  let new_v1 = rectangle(a_v1.xl, a_v1.yc-70, a_v1.xh, a_v1.yc+70)
+;  Modify a_v1 shape=new_v1
+;
+;
+;############################################################################################################
+;## Update M0B, M0C to normal M0
+;##
+;##
+;############################################################################################################
+Transform Move_M0B_to_M0
+flip=false
+AND
+  a_m0b M0B
+
+  Modify a_m0b layer=m0
+  
+Transform Move_M0C_to_M0
+flip=false
+AND
+  a_m0c M0C
+
+  Modify a_m0c layer=m0
+
+Transform Move_M0BPin_to_M0Pin
+flip=false
+AND
+  a_m0bpin M0Bpin
+
+  Modify a_m0bpin layer=m0_pin
+  
+Transform Move_M0CPin_to_M0Pin
+flip=false
+AND
+  a_m0cpin M0Cpin
+
+  Modify a_m0cpin layer=m0_pin
+
+;############################################################################################################
+;## Update M2B, M2C to normal M2
+;##
+;##
+;############################################################################################################
+Transform Move_M2B_to_M2
+flip=false
+AND
+  a_m2b M2B
+
+  Modify a_m2b layer=m2
+  
+Transform Move_M2C_to_M2
+flip=false
+AND
+  a_m2c M2C
+
+  Modify a_m2c layer=m2
+
+Transform Move_M2BPin_to_M2Pin
+flip=false
+AND
+  a_m2bpin M2Bpin
+
+  Modify a_m2bpin layer=m2_pin
+  
+Transform Move_M2CPin_to_M2Pin
+flip=false
+AND
+  a_m2cpin M2Cpin
+
+  Modify a_m2cpin layer=m2_pin  
+;############################################################################################################
+;## Delete TCN 5:0 layers which are overlapping the TCR ID (81:582) {These are the EMR and stack nodes}
+;##
+;##
+;############################################################################################################
+Transform  Delete_TCN_on_TCRID
+flip=flase
+AND
+  tid TCR
+  t TCN | this.intersects(tid)
+  Delete t
+
+;############################################################################################################
+;## Delete redundunt bm0 port
+;##
+;##
+;############################################################################################################
+#if 0
+Transform  Delete_BM0pin_redundant
+flip=flase
+AND
+  b BM0pin | this.xl == -140
+  Delete b
+#endif
