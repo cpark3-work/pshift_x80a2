@@ -1,0 +1,15 @@
+## created to contain only relevant x80a cells
+##collect old 'b' stm only 115 b available
+## in two forms
+## 1. old with tc2
+## 1. old with tcn
+
+mkdir -p stm_oldtc2_115
+foreach c (`cat oldb_src115.group`)
+    cp output_stms/$c.stm stm_oldtc2_115/
+end 
+
+#mkdir -p stm_oldtcn_115
+#foreach c (`cat oldb_src115.group`)
+#    cp output_stms/$c.stm stm_oldtcn_115/
+#end 
