@@ -1,0 +1,18 @@
+##copy old 'b' stm only 115 b available
+
+#mkdir -p stm_oldb_src115
+#foreach c (`cat oldb_src115.group`)
+#    cp conv_tc2_tcn_output_stms/$c.stm stm_oldb_src115/
+#end 
+
+##rename
+
+# #from old 'b' new new 'b'
+rm -rf renamed_newb/
+ ~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_oldb_src115/ --output_dir renamed_newb/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map oldb2newb.map 
+rm -f renamed_newb/output_stms/*b[1-9].stm
+
+#convert lnr30 to lnr21
+cp -r renamed_newb/output_stms/ renamed_newb/output_stms_lnr21
+rm -rf output_stms_lnr21/
+~/Fruit/rungmo.sh renamed_newb/output_stms_lnr21/ conv_lnr21.gmo

@@ -8,9 +8,10 @@
 ##rename
 ##from old 'b' new new 'c'
 #rm -rf renamed_newc/
-#~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_oldb_src115/ --output_dir renamed_newc/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map oldb2newc.map 
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_oldb_src115/ --output_dir renamed_newc/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map oldb2newc.map 
 
-#from old 'b' new new 'b'
-rm -rf renamed_newb/
-~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_oldb_src115/ --output_dir renamed_newb/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map oldb2newb.map 
-rm -f renamed_newb/output_stms/*b[1-9].stm
+rm -rf renamed_newc/output_stms_lnr30/
+cp -r renamed_newc/output_stms/ renamed_newc/output_stms_lnr30
+
+rm -rf output_stms_lnr30/
+~/Fruit/rungmo.sh renamed_newc/output_stms_lnr30/ conv_vcxsize.gmo
