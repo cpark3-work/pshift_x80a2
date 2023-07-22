@@ -1,0 +1,67 @@
+#setenv LAYGEN /nfs/site/proj/cit/tools/laygen/latest
+
+#clgxchng
+
+################################
+# copy no jog cases based on PP/LNR
+# PP48: LNR30, LNR21
+################################
+#48PP
+mkdir -p joglle/output_stms_LNR21
+cp cellppa_ph5_nojoglle_tcndepop/*a[1-9].stm joglle/output_stms_LNR21
+mkdir -p joglle/output_stms_LNR30
+cp cellppa_ph5_nojoglle_tcndepop/*b[1-9].stm joglle/output_stms_LNR30
+
+################################
+# create 5 cases for each layout
+################################
+
+pushd joglle
+
+rm -rf *pp_output_stms_*
+rm -rf pp48_case*
+#mkdir -p pp45_case1 pp45_case2 pp45_case3 mkdir pp45_case4 pp45_case5
+mkdir -p pp48_case1 pp48_case2 pp48_case3 mkdir pp48_case4 pp48_case5
+
+#pp48 LNR21
+#case1
+~/Fruit/rungmo.sh output_stms_LNR21/ jog1pp21aggr_48pp.gmo
+#case2
+~/Fruit/rungmo.sh output_stms_LNR21/ jog2pp21aggr_48pp.gmo
+#case3
+~/Fruit/rungmo.sh output_stms_LNR21/ jog3pp21aggr_48pp.gmo
+#case4
+~/Fruit/rungmo.sh output_stms_LNR21/ jog2pp30aggr_48pp.gmo
+#case5
+~/Fruit/rungmo.sh output_stms_LNR21/ jog3pp30aggr_48pp.gmo
+
+#pp48 LNR30
+#case1
+~/Fruit/rungmo.sh output_stms_LNR30/ jog1pp30aggr_48pp.gmo
+#case2
+~/Fruit/rungmo.sh output_stms_LNR30/ jog2pp30aggr_48pp.gmo
+#case3
+~/Fruit/rungmo.sh output_stms_LNR30/ jog3pp30aggr_48pp.gmo
+#case4
+~/Fruit/rungmo.sh output_stms_LNR30/ jog2pp21aggr_48pp.gmo
+#case5
+~/Fruit/rungmo.sh output_stms_LNR30/ jog3pp21aggr_48pp.gmo
+
+#collection
+cp jog1pp21aggr_48pp_output_stms_LNR21/* pp48_case1/
+cp jog2pp21aggr_48pp_output_stms_LNR21/* pp48_case2/
+cp jog3pp21aggr_48pp_output_stms_LNR21/* pp48_case3/
+cp jog2pp30aggr_48pp_output_stms_LNR21/* pp48_case4/
+cp jog3pp30aggr_48pp_output_stms_LNR21/* pp48_case5/
+
+cp jog1pp30aggr_48pp_output_stms_LNR30/* pp48_case1/
+cp jog2pp30aggr_48pp_output_stms_LNR30/* pp48_case2/
+cp jog3pp30aggr_48pp_output_stms_LNR30/* pp48_case3/
+cp jog2pp21aggr_48pp_output_stms_LNR30/* pp48_case4/
+cp jog3pp21aggr_48pp_output_stms_LNR30/* pp48_case5/
+
+
+
+
+popd
+

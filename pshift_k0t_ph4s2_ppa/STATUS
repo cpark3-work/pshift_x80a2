@@ -1,0 +1,37 @@
+1. ready ww28 45pp ph4s2 no jog LLE   conv_tc2_tcn_output_stms_45pp
+2. ready ww28 45pp ph4s2 RFX          RFXwith_singleTCN_conv_tc2_tcn_output_stms_45pp
+3. ?ww28? 45pp ph4s2 jog LLE    multiple folders (iso Z:1,2,3pp, non-iso Z: 2,3pp)
+
+4. ready ww32 48pp ph5 no jog LLE     conv_tc2_tcn_output_stms 
+5. ready ww32 48pp ph5 RFX            RFXwith_singleTCN_conv_tc2_tcn_output_stms
+6. ww32 48pp ph5 jog LLE        multiple folders (iso Z:1,2,3pp, non-iso Z: 2,3pp)
+
+##############################
+20230722
+
+creating ph5 test cases with TCN depop
+1. 144CH Revised Arch ph5 2-3 set of cells TCN only  Extraction layouts to enable PDK no jog LLE
+2. 144CH Revised Arch ph5 2-3 set of cells TCN only  full cellPPA set of cells Extraction layouts to enable PDK with jog LLE
+3. 144CHRevised Arch  ph5 2-3 set of cells TCN only  full cellPPA set of cells  Extraction layouts with RFX spec 
+4. 144CH Revised Arch ph5 full cellPPA set of cells  TCN only Extraction layouts to enable PDK no jog LLE
+5. 144CH Revised Arch ph5 full cellPPA set of cells TCN only  Extraction layouts to enable PDK with jog LLE
+6. 144CHRevised Arch  ph5 full cellPPA set of cells TCN only Extraction layouts with RFX spec 
+
+#testcase1 and 4
+starting point: just apply x80a1_por144_cleanup.gmo
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_ph4s2_ppa/cellppa_ph5_nojoglle
+~/Fruit/rungmo.sh cellppa_ph5_nojoglle/ x80a1_por144_cleanup.gmo
+mv  x80a1_por144_cleanup_cellppa_ph5_nojoglle/ cellppa_ph5_nojoglle_tcndepop
+
+#testcase3 and 6
+starting point: then just apply x80a1_por144_cleanup.gmo
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_ph4s2_ppa/cellppa_ph5_RFX
+~/Fruit/rungmo.sh cellppa_ph5_RFX/ x80a1_por144_cleanup.gmo
+mv  x80a1_por144_cleanup_cellppa_ph5_RFX/ cellppa_ph5_RFX_tcndepop
+
+#testcase2 and 5
+use script below. just source
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_ph4s2_ppa/cmd_lle_jog_48pp.txt
+
+#for testing
+/nfs/pdx/disks/home.directory.052/cpark3/bin/validation/experimental/extstm_lvs_ppa_ph5.sh
