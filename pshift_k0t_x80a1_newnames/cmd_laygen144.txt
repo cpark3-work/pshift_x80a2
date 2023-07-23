@@ -1,0 +1,17 @@
+
+
+#assuming stm_laygen144
+
+#remove_prefix if needed
+rm -rf renamed_laygen144/
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_laygen144/ --output_dir renamed_laygen144/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map laygen144prefix.map 
+
+rm -rf renamed_laygen144/output_stms_laygen144/
+cp -r renamed_laygen144/output_stms/ renamed_laygen144/output_stms_laygen144
+
+rm -rf output_stms_laygen144/
+~/Fruit/rungmo.sh renamed_laygen144/output_stms_laygen144/ conv_vcxsize.gmo
+
+pushd output_stms_laygen144/
+source ../laygen144mv.map
+popd
