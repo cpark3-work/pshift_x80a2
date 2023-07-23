@@ -1,0 +1,67 @@
+# Converted from Stream file using CIT convertor 
+
+Wire layer=notfound purpose=notfound rect=60:125:390:595 ported=0 layerid=1:252
+
+
+Wire layer=poly purpose=drawing rect=-70:90:70:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=-70:810:70:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=410:90:550:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=410:810:550:1350 ported=0 layerid=2:0
+
+
+Wire layer=notfound purpose=notfound rect=60:845:390:1315 ported=0 layerid=8:252
+
+
+Wire layer=sdGen purpose=drawing rect=-720:720:1200:1440 ported=0 layerid=11:0
+
+
+Wire layer=chkBoundary purpose=boundary rect=0:0:480:1440 ported=0 layerid=50:0
+
+
+Wire layer=sliEM0B purpose=APRannotation rect=90:205:390:365 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=90:785:390:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=90:1365:390:1515 ported=0 layerid=81:256
+
+
+Wire layer=sliEM0C purpose=APRannotation rect=90:-75:390:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=90:495:390:655 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=90:1075:390:1235 ported=0 layerid=81:257
+
+
+Wire layer=p48Region purpose=id rect=-240:0:720:1440 ported=0 layerid=82:201
+
+
+Wire layer=fti purpose=drawing rect=-70:0:70:1440 ported=0 layerid=184:0
+Wire layer=fti purpose=drawing rect=410:0:550:1440 ported=0 layerid=184:0
+
+
+Wire layer=devflav purpose=n3_id rect=0:0:480:720 ported=0 layerid=273:106
+
+
+Wire layer=devflav purpose=p3_id rect=0:720:480:1440 ported=0 layerid=273:107
+
+
+Wire layer=tc1 purpose=fill rect=170:110:310:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=170:830:310:1330 ported=0 layerid=304:250
+
+
+Wire layer=tc2 purpose=fill rect=170:90:310:1350 ported=0 layerid=305:250
+
+
+Wire net=vssx layer=bm0 purpose=drawing rect=-750:-540:1230:540 ported=1 layerid=366:0
+Wire net=vcc layer=bm0 purpose=drawing rect=-750:900:1230:1980 ported=1 layerid=366:0
+
+
+Wire net=vssx layer=bm0 purpose=pin rect=-750:-540:1230:540 ported=1 layerid=366:2
+Wire net=vcc layer=bm0 purpose=pin rect=-750:900:1230:1980 ported=1 layerid=366:2
+
+
+Wire layer=b144hRegionEMR purpose=id rect=-240:0:720:1440 ported=0 layerid=484:50
+
+
+
+
+Cell k0tzdsv22ad1n01x5 bbox=0:0:480:1440 version=1
+
+
+

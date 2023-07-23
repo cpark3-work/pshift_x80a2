@@ -1,0 +1,254 @@
+argc = 9
+input_dir = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs
+output_dir = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs
+output_format = 
+shift_spec = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/rename_only.txt
+source_arch = 
+target_arch = 
+cell_map = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/oldnewlay.map
+k0tzdsv11at1n01x5   k0tzdsv22at11b1x5
+k0tzdsv11at1n02x5   k0tzdsv22at11b2x5
+k0tzdsv11at1n03x5   k0tzdsv22at11b3x5
+k0tzdsv11at1n04x5   k0tzdsv22at11b4x5
+k0tzdsv11at1n05x5   k0tzdsv22at11b5x5
+k0tzdsv11at1n06x5   k0tzdsv22at11b6x5
+k0tzdsv11at1n08x5   k0tzdsv22at11b8x5
+k0tzdsv11at1n10x5   k0tzdsv22at11bax5
+k0tzdsv22at1n01x5   k0tzdsv33at11c1x5
+k0tzdsv22at1n02x5   k0tzdsv33at11c2x5
+k0tzdsv22at1n03x5   k0tzdsv33at11c3x5
+k0tzdsv22at1n04x5   k0tzdsv33at11c4x5
+k0tzdsv22at1n05x5   k0tzdsv33at11c5x5
+k0tzdsv22at1n06x5   k0tzdsv33at11c6x5
+k0tzdsv22at1n08x5   k0tzdsv33at11c8x5
+k0tzdsv22at1n10x5   k0tzdsv33at11cax5
+lay_tconly          k0tydp122at11c0x5
+k0tydp122at1n00x5   k0tydp122at11b0x5
+lay_tconly          k0tzvcc00at11c0x5
+lay_tconly          k0tzvss00at11c0x5
+k0tzvcc00at1n00x5   k0tzvcc00at11b0x5
+k0tzvss00at1n00x5   k0tzvss00at11b0x5
+lay_tconly          k0tqolpppat11b1x5
+lay_tconly          k0tqolpppat11c1x5
+lay_tconly          k0tzaondnat12b1x5
+lay_tconly          k0tzaondnat12c1x5
+lay_tconly          k0tzaontpat12b1x5
+lay_tconly          k0tzaontpat12b1x5
+blank               blank
+k0tzdsv11ac1n01x5   k0tzdsv22at11b1x5
+k0tzdsv11ac1n02x5   k0tzdsv22at11b2x5
+k0tzdsv11ac1n03x5   k0tzdsv22at11b3x5
+k0tzdsv11ac1n04x5   k0tzdsv22at11b4x5
+k0tzdsv11ac1n05x5   k0tzdsv22at11b5x5
+k0tzdsv11ac1n06x5   k0tzdsv22at11b6x5
+k0tzdsv11ac1n08x5   k0tzdsv22at11b8x5
+k0tzdsv11ac1n10x5   k0tzdsv22at11bax5
+k0tzdsv22ac1n01x5   k0tzdsv33at11c1x5
+k0tzdsv22ac1n02x5   k0tzdsv33at11c2x5
+k0tzdsv22ac1n03x5   k0tzdsv33at11c3x5
+k0tzdsv22ac1n04x5   k0tzdsv33at11c4x5
+k0tzdsv22ac1n05x5   k0tzdsv33at11c5x5
+k0tzdsv22ac1n06x5   k0tzdsv33at11c6x5
+k0tzdsv22ac1n08x5   k0tzdsv33at11c8x5
+k0tzdsv22ac1n10x5   k0tzdsv33at11cax5
+lay_tconly          k0tydp122ac11c0x5
+k0tydp122ac1n00x5   k0tydp122at11b0x5
+lay_tconly          k0tzvcc00ac11c0x5
+lay_tconly          k0tzvss00ac11c0x5
+k0tzvcc00ac1n00x5   k0tzvcc00at11b0x5
+k0tzvss00ac1n00x5   k0tzvss00at11b0x5
+lay_tconly          k0tqolpppac11b1x5
+lay_tconly          k0tqolpppac11c1x5
+lay_tconly          k0tzaondnac12b1x5
+lay_tconly          k0tzaondnac12c1x5
+lay_tconly          k0tzaontpac12b1x5
+lay_tconly          k0tzaontpac12b1x5
+start to process LGF files in /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tydp122at1n00x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tydp122at1n00x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n01x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n01x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n02x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n02x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n03x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n03x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n04x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n04x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n05x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n05x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n06x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n06x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n08x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n08x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n10x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n10x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n16x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n16x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n32x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n32x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22aa1n64x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22aa1n64x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n01x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n01x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n02x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n02x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n03x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n03x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n04x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n04x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n05x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n05x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n06x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n06x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n08x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n08x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n10x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n10x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n16x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n16x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n32x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n32x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ab1n64x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ab1n64x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n01x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n01x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n02x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n02x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n03x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n03x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n04x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n04x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n05x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n05x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n06x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n06x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n08x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n08x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n10x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n10x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n16x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n16x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n32x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n32x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ac1n64x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ac1n64x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n01x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n01x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n02x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n02x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n03x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n03x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n04x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n04x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n05x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n05x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n06x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n06x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n08x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n08x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n10x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n10x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n16x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n16x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n32x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n32x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzdsv22ad1n64x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzdsv22ad1n64x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzvcc00at1n00x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzvcc00at1n00x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/input_lgfs/k0tzvss00at1n00x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs///k0tzvss00at1n00x5.lgf

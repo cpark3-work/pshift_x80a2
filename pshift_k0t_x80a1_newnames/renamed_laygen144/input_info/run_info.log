@@ -1,0 +1,7 @@
+Run by:       cpark3
+Run date:     Jul 23 2023 10:13:28
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          21596
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/laygenFTCG
+Args:         --input_dir stm_laygen144/ --output_dir renamed_laygen144/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map laygen144prefix.map 

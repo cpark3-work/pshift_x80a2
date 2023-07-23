@@ -1,0 +1,421 @@
+# Converted from Stream file using CIT convertor 
+
+Wire layer=ndiff purpose=drawing rect=70:110:890:610 ported=0 layerid=1:0
+Wire layer=ndiff purpose=drawing rect=1030:110:7610:610 ported=0 layerid=1:0
+Wire layer=ndiff purpose=drawing rect=7750:110:8570:610 ported=0 layerid=1:0
+Wire layer=ndiff purpose=drawing rect=8710:110:9530:610 ported=0 layerid=1:0
+
+
+Wire layer=poly purpose=drawing rect=-70:90:70:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=-70:810:70:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=410:90:550:630 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=410:810:550:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=890:90:1030:630 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=890:810:1030:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=1370:90:1510:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=1850:90:1990:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=2330:90:2470:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=2810:90:2950:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=3290:90:3430:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=3770:90:3910:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=4250:90:4390:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=4730:90:4870:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=5210:90:5350:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=5210:810:5350:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=5690:90:5830:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=6170:90:6310:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=6650:90:6790:1350 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=7130:90:7270:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=7610:90:7750:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=7610:810:7750:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=8090:90:8230:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=8090:835:8230:1325 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=8570:90:8710:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=8570:810:8710:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=9050:90:9190:630 ported=0 layerid=2:0
+Wire net=clk layer=poly purpose=drawing rect=9050:810:9190:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=9530:90:9670:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=9530:810:9670:1350 ported=0 layerid=2:0
+
+
+Wire layer=poly purpose=dummy rect=410:110:550:610 ported=0 layerid=2:33
+Wire layer=poly purpose=dummy rect=5210:110:5350:610 ported=0 layerid=2:33
+Wire layer=poly purpose=dummy rect=5210:830:5350:1330 ported=0 layerid=2:33
+Wire layer=poly purpose=dummy rect=8090:110:8230:610 ported=0 layerid=2:33
+Wire layer=poly purpose=dummy rect=8090:830:8230:1330 ported=0 layerid=2:33
+Wire layer=poly purpose=dummy rect=9050:110:9190:610 ported=0 layerid=2:33
+
+
+Wire net=clkout layer=m1 purpose=drawing rect=590:95:850:1345 ported=1 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=1550:95:1810:1345 ported=1 layerid=4:0
+Wire net=clk layer=m1 purpose=drawing rect=2030:670:2290:1345 ported=0 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=2510:95:2770:1345 ported=1 layerid=4:0
+Wire net=clk layer=m1 purpose=drawing rect=2990:670:3250:1345 ported=0 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=3470:95:3730:1345 ported=1 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=4430:95:4690:1345 ported=1 layerid=4:0
+Wire net=clk layer=m1 purpose=drawing rect=4910:670:5170:1345 ported=0 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=5870:95:6130:1345 ported=1 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=6830:95:7090:1345 ported=1 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=7790:95:8050:1345 ported=1 layerid=4:0
+Wire net=clkout layer=m1 purpose=drawing rect=8750:95:9010:1345 ported=1 layerid=4:0
+
+
+Wire net=clk layer=m1 purpose=blockage rect=2030:670:2290:1345 ported=0 layerid=4:1
+Wire net=clk layer=m1 purpose=blockage rect=2990:670:3250:1345 ported=0 layerid=4:1
+Wire net=clk layer=m1 purpose=blockage rect=4910:670:5170:1345 ported=0 layerid=4:1
+
+
+Wire net=clkout layer=m1 purpose=pin rect=590:95:850:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=1550:95:1810:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=2510:95:2770:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=3470:95:3730:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=4430:95:4690:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=5870:95:6130:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=6830:95:7090:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=7790:95:8050:1345 ported=1 layerid=4:2
+Wire net=clkout layer=m1 purpose=pin rect=8750:95:9010:1345 ported=1 layerid=4:2
+
+
+Wire layer=tcn purpose=drawing rect=170:90:310:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=170:810:310:1350 ported=0 layerid=5:0
+Wire layer=tcn purpose=drawing rect=650:90:790:630 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=650:810:790:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=1130:90:1270:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=1130:810:1270:1350 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=1610:90:1750:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=2090:90:2230:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=2090:810:2230:1350 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=2570:90:2710:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=3050:90:3190:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=3050:810:3190:1350 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=3530:90:3670:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=4010:90:4150:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=4010:810:4150:1350 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=4490:90:4630:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=4970:90:5110:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=4970:810:5110:1350 ported=0 layerid=5:0
+Wire layer=tcn purpose=drawing rect=5450:90:5590:630 ported=0 layerid=5:0
+Wire layer=tcn purpose=drawing rect=5450:810:5590:1350 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=5930:90:6070:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=6410:90:6550:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=6410:810:6550:1350 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=6890:90:7030:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=7370:90:7510:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=7370:810:7510:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=7850:90:7990:630 ported=0 layerid=5:0
+Wire layer=tcn purpose=drawing rect=7850:810:7990:1350 ported=0 layerid=5:0
+Wire net=vssx layer=tcn purpose=drawing rect=8330:90:8470:630 ported=0 layerid=5:0
+Wire layer=tcn purpose=drawing rect=8330:810:8470:1350 ported=0 layerid=5:0
+Wire layer=tcn purpose=drawing rect=8810:90:8950:630 ported=0 layerid=5:0
+Wire net=clkout layer=tcn purpose=drawing rect=8810:810:8950:1350 ported=0 layerid=5:0
+Wire layer=tcn purpose=drawing rect=9290:90:9430:630 ported=0 layerid=5:0
+Wire net=vcc layer=tcn purpose=drawing rect=9290:810:9430:1350 ported=0 layerid=5:0
+
+
+Wire layer=pdiff purpose=drawing rect=70:830:7610:1330 ported=0 layerid=8:0
+Wire layer=pdiff purpose=drawing rect=7750:830:8570:1330 ported=0 layerid=8:0
+Wire layer=pdiff purpose=drawing rect=8710:830:9530:1330 ported=0 layerid=8:0
+
+
+Wire layer=sdGen purpose=drawing rect=-720:720:10320:1440 ported=0 layerid=11:0
+
+
+Wire layer=vt purpose=drawing rect=650:785:790:955 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=1610:485:1750:655 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=2090:205:2230:365 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=2570:485:2710:655 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=3530:485:3670:655 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=4490:485:4630:655 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=5930:485:6070:655 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=6890:485:7030:655 ported=0 layerid=31:0
+Wire layer=vt purpose=drawing rect=8810:785:8950:955 ported=0 layerid=31:0
+
+
+Wire layer=vt purpose=blockage rect=650:785:790:955 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=1610:485:1750:655 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=2090:205:2230:365 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=2570:485:2710:655 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=3530:485:3670:655 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=4490:485:4630:655 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=5930:485:6070:655 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=6890:485:7030:655 ported=0 layerid=31:1
+Wire layer=vt purpose=blockage rect=8810:785:8950:955 ported=0 layerid=31:1
+
+
+Wire layer=vg purpose=drawing rect=410:1075:550:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=890:1075:1030:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=1370:1075:1510:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=1850:1075:1990:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=2330:1075:2470:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=2810:1075:2950:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=3290:1075:3430:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=3770:1075:3910:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=4250:1075:4390:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=4730:1075:4870:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=5690:1075:5830:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=6170:1075:6310:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=6650:1075:6790:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=7130:1075:7270:1235 ported=0 layerid=32:0
+Wire layer=vg purpose=drawing rect=9050:1075:9190:1235 ported=0 layerid=32:0
+
+
+Wire layer=vg purpose=blockage rect=410:1075:550:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=890:1075:1030:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=1370:1075:1510:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=1850:1075:1990:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=2330:1075:2470:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=2810:1075:2950:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=3290:1075:3430:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=3770:1075:3910:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=4250:1075:4390:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=4730:1075:4870:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=5690:1075:5830:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=6170:1075:6310:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=6650:1075:6790:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=7130:1075:7270:1235 ported=0 layerid=32:1
+Wire layer=vg purpose=blockage rect=9050:1075:9190:1235 ported=0 layerid=32:1
+
+
+Wire layer=v1 purpose=drawing rect=2030:965:2290:1195 ported=0 layerid=43:0
+Wire layer=v1 purpose=drawing rect=2990:965:3250:1195 ported=0 layerid=43:0
+Wire layer=v1 purpose=drawing rect=4910:965:5170:1195 ported=0 layerid=43:0
+
+
+Wire layer=v1 purpose=blockage rect=2030:965:2290:1195 ported=0 layerid=43:1
+Wire layer=v1 purpose=blockage rect=2990:965:3250:1195 ported=0 layerid=43:1
+Wire layer=v1 purpose=blockage rect=4910:965:5170:1195 ported=0 layerid=43:1
+
+
+Wire layer=chkBoundary purpose=boundary rect=0:0:9600:1440 ported=0 layerid=50:0
+
+
+Wire layer=v0 purpose=drawing rect=590:495:850:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=590:785:850:945 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=1550:495:1810:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=2030:1075:2290:1235 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=2510:495:2770:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=2990:1075:3250:1235 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=3470:495:3730:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=4430:495:4690:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=4910:1075:5170:1235 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=5870:495:6130:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=6830:495:7090:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=7790:495:8050:655 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=7790:785:8050:945 ported=0 layerid=56:0
+Wire layer=v0 purpose=drawing rect=8750:785:9010:945 ported=0 layerid=56:0
+
+
+Wire layer=v0 purpose=blockage rect=590:495:850:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=590:785:850:945 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=1550:495:1810:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=2030:1075:2290:1235 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=2510:495:2770:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=2990:1075:3250:1235 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=3470:495:3730:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=4430:495:4690:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=4910:1075:5170:1235 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=5870:495:6130:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=6830:495:7090:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=7790:495:8050:655 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=7790:785:8050:945 ported=0 layerid=56:1
+Wire layer=v0 purpose=blockage rect=8750:785:9010:945 ported=0 layerid=56:1
+
+
+Wire layer=devTypeA purpose=id rect=410:110:550:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=410:830:550:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=890:830:1030:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=1370:110:1510:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=1370:830:1510:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=1850:110:1990:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=1850:830:1990:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=2330:110:2470:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=2330:830:2470:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=2810:110:2950:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=2810:830:2950:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=3290:110:3430:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=3290:830:3430:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=3770:110:3910:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=3770:830:3910:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=4250:110:4390:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=4250:830:4390:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=4730:110:4870:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=4730:830:4870:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=5210:110:5350:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=5210:830:5350:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=5690:110:5830:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=5690:830:5830:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=6170:110:6310:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=6170:830:6310:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=6650:110:6790:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=6650:830:6790:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=7130:110:7270:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=7130:830:7270:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=7610:110:7750:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=7610:830:7750:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=8090:110:8230:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=8090:830:8230:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=8570:830:8710:1330 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=9050:110:9190:610 ported=0 layerid=81:193
+Wire layer=devTypeA purpose=id rect=9050:830:9190:1330 ported=0 layerid=81:193
+
+
+Wire layer=sliEM0B purpose=APRannotation rect=90:1365:870:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=1050:785:1830:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=1050:1365:1830:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=2010:785:2790:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=2010:1365:2790:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=2970:785:3750:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=2970:1365:3750:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=3930:785:4710:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=3930:1365:4710:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=4890:785:5670:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=4890:1365:5670:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=5850:785:6630:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=5850:1365:6630:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=6810:785:7590:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=6810:1365:7590:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=7770:1365:8550:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=8730:1365:9510:1515 ported=0 layerid=81:256
+
+
+Wire layer=sliEM0C purpose=APRannotation rect=1050:-75:1830:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=2970:-75:3750:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=4890:-75:5670:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=6810:-75:7590:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=7770:-75:8550:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=8730:495:9510:655 ported=0 layerid=81:257
+
+
+Wire layer=notfound purpose=notfound rect=170:90:310:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=170:810:310:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=650:90:790:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=1130:90:1270:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=1130:810:1270:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=2090:810:2230:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=3050:90:3190:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=3050:810:3190:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=4010:90:4150:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=4010:810:4150:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=4970:90:5110:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=4970:810:5110:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=5450:115:5590:605 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=5450:835:5590:1325 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=6410:90:6550:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=6410:810:6550:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=7370:90:7510:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=7370:810:7510:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=7850:90:7990:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=8330:90:8470:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=8330:810:8470:1350 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=8810:90:8950:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=9290:90:9430:630 ported=0 layerid=81:582
+Wire layer=notfound purpose=notfound rect=9290:810:9430:1350 ported=0 layerid=81:582
+
+
+Wire layer=p48Region purpose=id rect=-240:0:9840:1440 ported=0 layerid=82:201
+
+
+Wire net=clk layer=m2color1 purpose=drawing rect=1930:965:5270:1195 ported=1 layerid=112:0
+
+
+Wire net=clk layer=m2color1 purpose=pin rect=1930:965:5270:1195 ported=1 layerid=112:2
+
+
+Wire net=vssx layer=m0color1 purpose=drawing rect=90:205:9510:365 ported=1 layerid=120:0
+Wire net=clkout layer=m0color1 purpose=drawing rect=90:785:870:945 ported=0 layerid=120:0
+Wire net=clkout layer=m0color1 purpose=drawing rect=7770:785:9510:945 ported=0 layerid=120:0
+
+
+Wire net=clkout layer=m0color1 purpose=blockage rect=90:785:870:945 ported=0 layerid=120:1
+Wire net=clkout layer=m0color1 purpose=blockage rect=7770:785:9510:945 ported=0 layerid=120:1
+
+
+Wire net=vssx layer=m0color1 purpose=pin rect=90:205:9510:365 ported=1 layerid=120:2
+
+
+Wire layer=fti purpose=drawing rect=-70:0:70:1440 ported=0 layerid=184:0
+Wire layer=fti purpose=drawing rect=890:0:1030:720 ported=0 layerid=184:0
+Wire layer=fti purpose=drawing rect=7610:0:7750:1440 ported=0 layerid=184:0
+Wire layer=fti purpose=drawing rect=8570:0:8710:1440 ported=0 layerid=184:0
+Wire layer=fti purpose=drawing rect=9530:0:9670:1440 ported=0 layerid=184:0
+
+
+Wire net=clk layer=m0color2 purpose=drawing rect=330:1075:9270:1235 ported=0 layerid=241:0
+Wire net=clkout layer=m0color2 purpose=drawing rect=570:495:8070:655 ported=0 layerid=241:0
+
+
+Wire net=clk layer=m0color2 purpose=blockage rect=330:1075:9270:1235 ported=0 layerid=241:1
+Wire net=clkout layer=m0color2 purpose=blockage rect=570:495:8070:655 ported=0 layerid=241:1
+
+
+Wire net=vcc layer=emr purpose=drawing rect=170:810:310:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=1130:90:1270:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=1130:810:1270:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=2090:90:2230:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=2090:810:2230:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=3050:90:3190:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=3050:810:3190:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=4010:90:4150:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=4010:810:4150:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=4970:90:5110:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=4970:810:5110:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=5450:90:5590:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=5450:810:5590:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=6410:90:6550:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=6410:810:6550:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=7370:90:7510:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=7370:810:7510:1350 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=7850:90:7990:630 ported=0 layerid=260:0
+Wire net=vssx layer=emr purpose=drawing rect=8330:90:8470:630 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=8330:810:8470:1350 ported=0 layerid=260:0
+Wire net=vcc layer=emr purpose=drawing rect=9290:810:9430:1350 ported=0 layerid=260:0
+
+
+Wire net=vcc layer=emr purpose=blockage rect=170:810:310:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=1130:90:1270:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=1130:810:1270:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=2090:90:2230:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=2090:810:2230:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=3050:90:3190:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=3050:810:3190:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=4010:90:4150:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=4010:810:4150:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=4970:90:5110:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=4970:810:5110:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=5450:90:5590:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=5450:810:5590:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=6410:90:6550:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=6410:810:6550:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=7370:90:7510:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=7370:810:7510:1350 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=7850:90:7990:630 ported=0 layerid=260:1
+Wire net=vssx layer=emr purpose=blockage rect=8330:90:8470:630 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=8330:810:8470:1350 ported=0 layerid=260:1
+Wire net=vcc layer=emr purpose=blockage rect=9290:810:9430:1350 ported=0 layerid=260:1
+
+
+Wire layer=devflav purpose=n2_id rect=0:0:9600:720 ported=0 layerid=273:104
+
+
+Wire layer=devflav purpose=p2_id rect=0:720:9600:1440 ported=0 layerid=273:105
+
+
+Wire net=vssx layer=bm0 purpose=drawing rect=-750:-540:10350:540 ported=1 layerid=366:0
+Wire net=vcc layer=bm0 purpose=drawing rect=-750:900:10350:1980 ported=1 layerid=366:0
+
+
+Wire net=vssx layer=bm0 purpose=pin rect=-750:-540:10350:540 ported=1 layerid=366:2
+Wire net=vcc layer=bm0 purpose=pin rect=-750:900:10350:1980 ported=1 layerid=366:2
+
+
+Wire layer=b144hRegionEMR purpose=id rect=-240:0:9840:1440 ported=0 layerid=484:50
+
+
+
+
+Cell k0tcinv00at1n24b5 bbox=0:0:9600:1440 version=1
+
+
+Pin clk direction=In
+Pin clkout direction=In
+

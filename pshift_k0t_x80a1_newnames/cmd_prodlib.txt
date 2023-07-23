@@ -1,0 +1,14 @@
+##copy old 'b' stm only 115 b available
+
+
+#assuming stm_prodlib
+
+#remove_prefix if needed
+rm -rf renamed_prodlib/
+~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir stm_prodlib_src13/ --output_dir renamed_prodlib/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map oldb2newc.map
+
+rm -rf renamed_prodlib/output_stms_prodlib/
+cp -r renamed_prodlib/output_stms/ renamed_prodlib/output_stms_prodlib
+
+rm -rf output_stms_prodlib/
+~/Fruit/rungmo.sh renamed_prodlib/output_stms_prodlib/ conv_vcxsize.gmo

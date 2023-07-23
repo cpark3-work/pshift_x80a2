@@ -1,0 +1,57 @@
+# This file is written by Fast-track application v1.0.0 Fri Jul 21 09:51:28 2023
+
+# using template name (LGF) and template version (1.0.0)
+
+Cell k0tzdsv22ad1n05x5 bbox=0:0:2400:1440 version=1
+
+
+
+Wire layer=notfound purpose=notfound rect=60:125:2190:595 ported=0 layerid=1:252
+Wire layer=poly purpose=drawing rect=-70:90:70:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=-70:810:70:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=2330:90:2470:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=2330:810:2470:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=fill rect=410:90:550:1350 ported=0 layerid=2:250
+Wire layer=poly purpose=fill rect=890:90:1030:1350 ported=0 layerid=2:250
+Wire layer=poly purpose=fill rect=1370:90:1510:1350 ported=0 layerid=2:250
+Wire layer=poly purpose=fill rect=1850:90:1990:1350 ported=0 layerid=2:250
+Wire layer=notfound purpose=notfound rect=60:845:2190:1315 ported=0 layerid=8:252
+Wire layer=sdGen purpose=drawing rect=-720:720:3120:1440 ported=0 layerid=11:0
+Wire layer=chkBoundary purpose=boundary rect=0:0:2400:1440 ported=0 layerid=50:0
+Wire layer=sliEM0B purpose=APRannotation rect=90:205:1350:365 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=90:785:1350:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=90:1365:1350:1515 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=1530:205:2310:365 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=1530:785:2310:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=1530:1365:2310:1515 ported=0 layerid=81:256
+Wire layer=sliEM0C purpose=APRannotation rect=330:-75:1110:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=330:495:1110:655 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=330:1075:1110:1235 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=1290:-75:2070:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=1290:495:2070:655 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=1290:1075:2070:1235 ported=0 layerid=81:257
+Wire layer=p48Region purpose=id rect=-240:0:2640:1440 ported=0 layerid=82:201
+Wire layer=fti purpose=drawing rect=-70:0:70:1440 ported=0 layerid=184:0
+Wire layer=fti purpose=drawing rect=2330:0:2470:1440 ported=0 layerid=184:0
+Wire layer=devflav purpose=n3_id rect=0:0:2400:720 ported=0 layerid=273:106
+Wire layer=devflav purpose=p3_id rect=0:720:2400:1440 ported=0 layerid=273:107
+Wire layer=tc1 purpose=fill rect=170:110:310:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=170:830:310:1330 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=650:110:790:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=650:830:790:1330 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=1130:110:1270:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=1130:830:1270:1330 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=1610:110:1750:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=1610:830:1750:1330 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=2090:110:2230:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=2090:830:2230:1330 ported=0 layerid=304:250
+Wire layer=tc2 purpose=fill rect=170:90:310:1350 ported=0 layerid=305:250
+Wire layer=tc2 purpose=fill rect=650:90:790:1350 ported=0 layerid=305:250
+Wire layer=tc2 purpose=fill rect=1130:90:1270:1350 ported=0 layerid=305:250
+Wire layer=tc2 purpose=fill rect=1610:90:1750:1350 ported=0 layerid=305:250
+Wire layer=tc2 purpose=fill rect=2090:90:2230:1350 ported=0 layerid=305:250
+Wire net=vssx layer=bm0 purpose=drawing rect=-750:-540:3150:540 ported=1 layerid=366:0
+Wire net=vcc layer=bm0 purpose=drawing rect=-750:900:3150:1980 ported=1 layerid=366:0
+Wire net=vssx layer=bm0 purpose=pin rect=-750:-540:3150:540 ported=1 layerid=366:2
+Wire net=vcc layer=bm0 purpose=pin rect=-750:900:3150:1980 ported=1 layerid=366:2
+Wire layer=b144hRegionEMR purpose=id rect=-240:0:2640:1440 ported=0 layerid=484:50

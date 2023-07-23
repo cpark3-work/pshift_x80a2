@@ -1,0 +1,1974 @@
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:28
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26554
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n01x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n01x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:28
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26584
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tydp122at11b0x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tydp122at11b0x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:28
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26615
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n02x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n02x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:28
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26648
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n03x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n03x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:29
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26682
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n04x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n04x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:29
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26725
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n05x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n05x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:29
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26758
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n06x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n06x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:29
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26788
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n08x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n08x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:30
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26820
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n10x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n10x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:30
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26850
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n16x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n16x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:30
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26880
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n32x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n32x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:30
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26913
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22aa1n64x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22aa1n64x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:31
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26944
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n01x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n01x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:31
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          26977
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n02x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n02x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:31
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27007
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n03x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n03x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:31
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27037
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n04x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n04x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:32
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27070
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n05x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n05x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:32
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27101
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n06x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n06x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:32
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27132
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n08x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n08x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:32
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27165
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n10x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n10x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:33
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27196
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n16x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n16x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:33
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27227
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n32x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n32x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:33
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27258
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ab1n64x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ab1n64x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:34
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27288
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ac1n16x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ac1n16x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:34
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27318
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11c1x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11c1x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:34
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27348
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11c2x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11c2x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:34
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27380
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11c3x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11c3x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:34
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27410
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11c4x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11c4x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:35
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27440
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11c5x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11c5x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:35
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27470
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11c6x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11c6x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:35
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27501
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11c8x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11c8x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:35
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27532
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv33at11cax5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv33at11cax5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:36
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27565
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ac1n32x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ac1n32x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:36
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27600
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ac1n64x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ac1n64x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:36
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27643
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n01x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n01x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:37
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27680
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n02x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n02x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:37
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27712
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n03x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n03x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:37
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27742
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n04x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n04x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:38
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27772
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n05x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n05x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:38
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27805
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n06x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n06x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:38
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27837
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n08x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n08x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:38
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27867
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n10x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n10x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:39
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27897
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n16x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n16x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:39
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27928
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n32x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n32x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:39
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27959
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzdsv22ad1n64x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzdsv22ad1n64x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:40
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          27991
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzvcc00at11b0x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzvcc00at11b0x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.
+-------------------------------------------------------------------------------
+LgfToOas
+Version 1.0
+
+CIT application suite
+Copyright 2006-2022, Intel Corporation
+INTERNAL USE ONLY - NOT FOR EXTERNAL DISTRIBUTION
+
+Run by:       cpark3
+Run date:     Jul 21 2023 09:51:40
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          28022
+
+LAYGEN:       /nfs/site/proj/cit/tools/laygen/latest/
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/lgf2geo
+Args:         -i /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_lgfs/k0tzvss00at11b0x5.lgf -o /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_layonly/output_stms/k0tzvss00at11b0x5.stm --layerMap /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/p1280_pshift.map --oo --dbu 1e-10 
+CWD:          /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames
+-----------------------------------------------------------
+Compiled at:  17:26:48 on Apr 13 2022
+Compiled for: gcc-x64-optimized
+Compiled on:  sles12
+BUILD OS:     SUSE_Linux_Enterprise_Server_12_SP5
+FPU config:   895
+GCC:          10.2.0
+-----------------------------------------------------------
+Component versions:
+Boost:        1.78.0/default-SEC-no_polygon_v2
+DOGS:         5.21.0 (5.21.0) with GTL 1.9.1
+MKL:          2021.0.20210617 (Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors)
+TBB:          2020.3/rev3
+TCMalloc:     gperftools 2.8.1
+sqlite3:      3.28.0
+Prover:       21.4p6/default-SEC-v3
+-----------------------------------------------------------
+Entitlement:  CIT_LAYGEN_TOOL_ACCESS
+Authorized:   cpark3 (CIT_LAYGEN_TOOL_ACCESS)
+Expires:      Never
+-----------------------------------------------------------
+DINI: Setting  global hierarchy repair mode to level 1.
+Could not find architecture values file at /nfs/site/proj/cit/tools/laygen/latest//collaterals//arch/k0t/k0t_arch_values.txt
+LGFO: Done.

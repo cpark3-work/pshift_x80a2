@@ -1,0 +1,7 @@
+Run by:       cpark3
+Run date:     Jul 21 2023 21:34:06
+Run on:       plxchx088.pdx.intel.com
+Platform:     SUSE Linux Enterprise Server 12 SP5
+PID:          9145
+Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/laygenFTCG
+Args:         --input_dir stm_oldb_src115/ --output_dir renamed_newb/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map oldb2newb.map 

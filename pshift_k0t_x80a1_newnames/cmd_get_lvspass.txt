@@ -1,0 +1,48 @@
+#pshifted with AD MD's eco cells
+#eco from prod lib
+#laygen126
+#laygen144
+
+#################################
+#target all_lvspass_lnr30
+mkdir -p all_lvspass_lnr30
+
+#################################
+#starting point output_stms_lnr30
+foreach c (`cat $WARD/group/lnr30_115.group`)
+cp output_stms_lnr30/$c.stm all_lvspass_lnr30/
+end
+
+#################################
+#eco / prod lib
+foreach c (`cat $WARD/group/add_prodlib.group`)
+cp output_stms_prodlib/$c.stm all_lvspass_lnr30/
+end
+
+#################################
+#laygen126
+foreach c (`cat $WARD/group/add_laygen126.group`)
+cp output_stms_laygen126/$c.stm all_lvspass_lnr30/
+end
+
+#################################
+#laygen144
+foreach c (`cat $WARD/group/add_laygen144.group`)
+cp output_stms_laygen144/$c.stm all_lvspass_lnr30/
+end
+
+#################################
+#known lvsfails
+foreach c (`cat $WARD/group/delete_lvsfail.group`)
+rm -f all_lvspass_lnr30/$c.stm
+end
+
+
+
+
+
+#################################
+echo "# of cells under target folder"
+echo "expected   " `wc $WARD/group/lnr30_115.group`
+echo "known fail " `wc $WARD/group/delete_lvsfail.group`
+echo "actual     " `ls all_lvspass_lnr30 | wc`

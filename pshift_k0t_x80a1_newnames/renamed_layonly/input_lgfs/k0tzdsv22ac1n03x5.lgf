@@ -1,0 +1,77 @@
+# Converted from Stream file using CIT convertor 
+
+Wire layer=notfound purpose=notfound rect=60:125:1290:595 ported=0 layerid=1:252
+
+
+Wire layer=poly purpose=drawing rect=-70:90:70:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=-70:810:70:1350 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=1370:90:1510:630 ported=0 layerid=2:0
+Wire layer=poly purpose=drawing rect=1370:810:1510:1350 ported=0 layerid=2:0
+
+
+Wire layer=poly purpose=fill rect=410:90:550:1350 ported=0 layerid=2:250
+Wire layer=poly purpose=fill rect=890:90:1030:1350 ported=0 layerid=2:250
+
+
+Wire layer=notfound purpose=notfound rect=60:845:1290:1315 ported=0 layerid=8:252
+
+
+Wire layer=sdGen purpose=drawing rect=-720:720:2160:1440 ported=0 layerid=11:0
+
+
+Wire layer=chkBoundary purpose=boundary rect=0:0:1440:1440 ported=0 layerid=50:0
+
+
+Wire layer=sliEM0B purpose=APRannotation rect=90:205:1350:365 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=90:785:1350:945 ported=0 layerid=81:256
+Wire layer=sliEM0B purpose=APRannotation rect=90:1365:1350:1515 ported=0 layerid=81:256
+
+
+Wire layer=sliEM0C purpose=APRannotation rect=570:-75:1350:75 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=570:495:1350:655 ported=0 layerid=81:257
+Wire layer=sliEM0C purpose=APRannotation rect=570:1075:1350:1235 ported=0 layerid=81:257
+
+
+Wire layer=p48Region purpose=id rect=-240:0:1680:1440 ported=0 layerid=82:201
+
+
+Wire layer=fti purpose=drawing rect=-70:0:70:1440 ported=0 layerid=184:0
+Wire layer=fti purpose=drawing rect=1370:0:1510:1440 ported=0 layerid=184:0
+
+
+Wire layer=devflav purpose=n2_id rect=0:0:1440:720 ported=0 layerid=273:104
+
+
+Wire layer=devflav purpose=p2_id rect=0:720:1440:1440 ported=0 layerid=273:105
+
+
+Wire layer=tc1 purpose=fill rect=170:110:310:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=170:830:310:1330 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=650:110:790:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=650:830:790:1330 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=1130:110:1270:610 ported=0 layerid=304:250
+Wire layer=tc1 purpose=fill rect=1130:830:1270:1330 ported=0 layerid=304:250
+
+
+Wire layer=tc2 purpose=fill rect=170:90:310:1350 ported=0 layerid=305:250
+Wire layer=tc2 purpose=fill rect=650:90:790:1350 ported=0 layerid=305:250
+Wire layer=tc2 purpose=fill rect=1130:90:1270:1350 ported=0 layerid=305:250
+
+
+Wire net=vssx layer=bm0 purpose=drawing rect=-750:-540:2190:540 ported=1 layerid=366:0
+Wire net=vcc layer=bm0 purpose=drawing rect=-750:900:2190:1980 ported=1 layerid=366:0
+
+
+Wire net=vssx layer=bm0 purpose=pin rect=-750:-540:2190:540 ported=1 layerid=366:2
+Wire net=vcc layer=bm0 purpose=pin rect=-750:900:2190:1980 ported=1 layerid=366:2
+
+
+Wire layer=b144hRegionEMR purpose=id rect=-240:0:1680:1440 ported=0 layerid=484:50
+
+
+
+
+Cell k0tzdsv22ac1n03x5 bbox=0:0:1440:1440 version=1
+
+
+

@@ -1,0 +1,57 @@
+# File written by LgfApi version 1.00 on Fri Jul 21 07:19:39 2023
+# Using template name (LGF) and template version (1.00)
+
+Cell k0tbfn000at11c2x5 bbox=0:0:1920:1440 version=1
+
+Pin a direction=In
+Pin o direction=In
+
+Wire layer=ndiff rect=70:110:1850:610 ported=0 purpose=drawing layerid=1:0
+Wire layer=poly rect=-70:90:70:630 ported=0 purpose=drawing layerid=2:0
+Wire layer=poly rect=-70:810:70:1350 ported=0 purpose=drawing layerid=2:0
+Wire net=a layer=poly rect=410:90:550:1350 ported=0 purpose=drawing layerid=2:0
+Wire net=n1 layer=poly rect=890:90:1030:1350 ported=0 purpose=drawing layerid=2:0
+Wire net=n1 layer=poly rect=1370:90:1510:1350 ported=0 purpose=drawing layerid=2:0
+Wire layer=poly rect=1850:90:1990:630 ported=0 purpose=drawing layerid=2:0
+Wire layer=poly rect=1850:810:1990:1350 ported=0 purpose=drawing layerid=2:0
+Wire net=n1 layer=tcn rect=170:90:310:1350 ported=0 purpose=drawing layerid=5:0
+Wire net=vssx layer=tcn rect=650:90:790:630 ported=0 purpose=drawing layerid=5:0
+Wire net=vcc layer=tcn rect=650:810:790:1350 ported=0 purpose=drawing layerid=5:0
+Wire net=o layer=tcn rect=1130:90:1270:1350 ported=0 purpose=drawing layerid=5:0
+Wire net=vssx layer=tcn rect=1610:90:1750:630 ported=0 purpose=drawing layerid=5:0
+Wire net=vcc layer=tcn rect=1610:810:1750:1350 ported=0 purpose=drawing layerid=5:0
+Wire layer=pdiff rect=70:830:1850:1330 ported=0 purpose=drawing layerid=8:0
+Wire layer=sdGen rect=-720:720:2640:1440 ported=0 purpose=drawing layerid=11:0
+Wire net=n1 layer=vt rect=170:1075:310:1235 ported=0 purpose=drawing layerid=31:0
+Wire net=o layer=vt rect=1130:485:1270:655 ported=0 purpose=drawing layerid=31:0
+Wire net=a layer=vg rect=410:485:550:655 ported=0 purpose=drawing layerid=32:0
+Wire net=n1 layer=vg rect=890:1075:1030:1235 ported=0 purpose=drawing layerid=32:0
+Wire net=n1 layer=vg rect=1370:1075:1510:1235 ported=0 purpose=drawing layerid=32:0
+Wire layer=chkBoundary rect=0:0:1920:1440 ported=0 purpose=boundary layerid=50:0
+Wire layer=devTypeA rect=410:110:550:610 ported=0 purpose=id layerid=81:193
+Wire layer=devTypeA rect=410:830:550:1330 ported=0 purpose=id layerid=81:193
+Wire layer=devTypeA rect=890:110:1030:610 ported=0 purpose=id layerid=81:193
+Wire layer=devTypeA rect=890:830:1030:1330 ported=0 purpose=id layerid=81:193
+Wire layer=devTypeA rect=1370:110:1510:610 ported=0 purpose=id layerid=81:193
+Wire layer=devTypeA rect=1370:830:1510:1330 ported=0 purpose=id layerid=81:193
+Wire layer=p48Region rect=-240:0:2160:1440 ported=0 purpose=id layerid=82:201
+Wire layer=fti rect=-70:0:70:1440 ported=0 purpose=drawing layerid=184:0
+Wire layer=fti rect=1850:0:1990:1440 ported=0 purpose=drawing layerid=184:0
+Wire net=a layer=m0color2 rect=90:495:870:655 ported=1 purpose=drawing layerid=241:0
+Wire net=n1 layer=m0color2 rect=90:1075:1590:1235 ported=0 purpose=drawing layerid=241:0
+Wire net=o layer=m0color2 rect=1050:495:1830:655 ported=1 purpose=drawing layerid=241:0
+Wire net=n1 layer=m0color2 rect=90:1075:1590:1235 ported=0 purpose=blockage layerid=241:1
+Wire net=a layer=m0color2 rect=90:495:870:655 ported=1 purpose=pin layerid=241:2
+Wire net=o layer=m0color2 rect=1050:495:1830:655 ported=1 purpose=pin layerid=241:2
+Wire net=vssx layer=emr rect=650:90:790:630 ported=0 purpose=drawing layerid=260:0
+Wire net=vcc layer=emr rect=650:810:790:1350 ported=0 purpose=drawing layerid=260:0
+Wire net=vssx layer=emr rect=1610:90:1750:630 ported=0 purpose=drawing layerid=260:0
+Wire net=vcc layer=emr rect=1610:810:1750:1350 ported=0 purpose=drawing layerid=260:0
+Wire layer=devflav rect=0:0:1920:720 ported=0 purpose=n2_id layerid=273:104
+Wire layer=devflav rect=0:720:1920:1440 ported=0 purpose=p2_id layerid=273:105
+Wire net=vssx layer=bm0 rect=-750:-540:2670:540 ported=1 purpose=drawing layerid=366:0
+Wire net=vcc layer=bm0 rect=-750:900:2670:1980 ported=1 purpose=drawing layerid=366:0
+Wire net=vssx layer=bm0 rect=-750:-540:2670:540 ported=1 purpose=pin layerid=366:2
+Wire net=vcc layer=bm0 rect=-750:900:2670:1980 ported=1 purpose=pin layerid=366:2
+Wire layer=b144hRegionEMR rect=-240:0:2160:1440 ported=0 purpose=id layerid=484:50
+
