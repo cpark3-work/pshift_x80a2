@@ -10,7 +10,10 @@ rm -rf renamed_laygen144/output_stms_laygen144/
 cp -r renamed_laygen144/output_stms/ renamed_laygen144/output_stms_laygen144
 
 rm -rf output_stms_laygen144/
-~/Fruit/rungmo.sh renamed_laygen144/output_stms_laygen144/ conv_vcxsize.gmo
+#assuming size is correct
+#~/Fruit/rungmo.sh renamed_laygen144/output_stms_laygen144/ conv_vcxsize.gmo
+#adding p45region id and 144 region id
+~/Fruit/rungmo.sh renamed_laygen144/output_stms_laygen144/ conv_id_144laygen.gmo
 
 pushd output_stms_laygen144/
 source ../laygen144mv.map
