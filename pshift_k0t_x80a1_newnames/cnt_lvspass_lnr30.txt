@@ -1,0 +1,6 @@
+echo 'lvs pass'
+echo 'expecting: ' `wc $WARD/group/lnr30_117.group`
+echo 'actual: ' 
+
+grep 'Results: PASS' /nfs/site/proj/dt/stdlib/k0/work/dcl_or/cpark3/gmo/pds/logs/lvs_k0tb1_improved/*/k*RESULTS | wc
+

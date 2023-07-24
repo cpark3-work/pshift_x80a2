@@ -1,0 +1,11 @@
+#meant be one time
+rm -f stm_sandbox/*stm
+cp output_stms_lnr21/k0tti* stm_sandbox/
+rm -rf conv_lnr30_stm_sandbox/
+~/Fruit/rungmo.sh stm_sandbox/ conv_lnr30.gmo
+
+rm -rf renamed_tihilolnr30/
+ ~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir conv_lnr30_stm_sandbox/ --output_dir renamed_tihilolnr30/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map tihilnr21tolnr30.map
+
+cp renamed_tihilolnr30/output_stms/k0tti* output_stms_lnr30/ 
+

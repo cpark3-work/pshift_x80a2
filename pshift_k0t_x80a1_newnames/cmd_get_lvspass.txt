@@ -9,7 +9,7 @@ mkdir -p all_lvspass_lnr30
 
 #################################
 #starting point output_stms_lnr30
-foreach c (`cat $WARD/group/lnr30_115.group`)
+foreach c (`cat $WARD/group/lnr30_117.group`)
 cp output_stms_lnr30/$c.stm all_lvspass_lnr30/
 end
 
@@ -37,12 +37,12 @@ foreach c (`cat $WARD/group/delete_lvsfail.group`)
 rm -f all_lvspass_lnr30/$c.stm
 end
 
-
-
-
-
 #################################
 echo "# of cells under target folder"
-echo "expected   " `wc $WARD/group/lnr30_115.group`
+echo "expected   " `wc $WARD/group/lnr30_117.group`
 echo "known fail " `wc $WARD/group/delete_lvsfail.group`
 echo "actual     " `ls all_lvspass_lnr30 | wc`
+
+#############################################
+#now prepare LNR21
+

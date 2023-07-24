@@ -1,0 +1,37 @@
+##starting point all_lvspass_lnr30
+
+rm -rf _t_all_lvspass_lnr30/
+cp -r all_lvspass_lnr30/ _t_all_lvspass_lnr30
+
+#source for these cells are separate from LNR30 cells 
+foreach c (`cat $WARD/group/use_5cells4LNR21.group`)
+cp output_stms_lnr30/$c.stm _t_all_lvspass_lnr30/
+end
+
+
+##rename
+
+rm -rf renamed_lvspasslnr21/
+ ~/bin/setgrp clgxchng  $LAYGEN/bin/laygenFTCG --input_dir _t_all_lvspass_lnr30/ --output_dir renamed_lvspasslnr21/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map newlnr30tolnr21.map
+rm -f renamed_lvspasslnr21/output_stms/*c???.stm
+
+#remove temp folder
+#rm -rf _t_all_lvspass_lnr30
+
+#convert lnr30 to lnr21
+cp -r renamed_lvspasslnr21/output_stms/ renamed_lvspasslnr21/output_stms_lvspasslnr21
+rm -rf output_stms_lvspasslnr21/
+~/Fruit/rungmo.sh renamed_lvspasslnr21/output_stms_lvspasslnr21/ conv_lnr21.gmo
+
+rm -rf all_lvspass_lnr21/
+mkdir -p all_lvspass_lnr21
+
+foreach c (`cat $WARD/group/lnr21_60.group`)
+mv output_stms_lvspasslnr21/$c.stm all_lvspass_lnr21/
+end
+
+#######################################
+#need to take 3 cells  (originally from x80a)
+foreach c (`cat $WARD/group/add_3_lnr21_x80a.group`)
+cp output_stms_lnr21/$c.stm all_lvspass_lnr21/
+end

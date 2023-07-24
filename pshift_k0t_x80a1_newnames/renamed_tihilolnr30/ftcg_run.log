@@ -1,0 +1,19 @@
+argc = 9
+input_dir = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_tihilolnr30/input_lgfs
+output_dir = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_tihilolnr30/output_lgfs
+output_format = 
+shift_spec = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/rename_only.txt
+source_arch = 
+target_arch = 
+cell_map = /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/tihilnr21tolnr30.map
+k0ttihi00at11b1x5 k0ttihi00at11c1x5 
+k0ttilo00at11b1x5 k0ttilo00at11c1x5
+start to process LGF files in /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_tihilolnr30/input_lgfs
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_tihilolnr30/input_lgfs/k0ttihi00at11b1x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_tihilolnr30/output_lgfs///k0ttihi00at11b1x5.lgf
+
+
+/nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_tihilolnr30/input_lgfs/k0ttilo00at11b1x5.lgf
+write results to /nfs/pdx/disks/dcti_disk0078/k0_ward/k0_ward/cpark3/gmo/my_gmo/pshift_k0t_x80a1_newnames/renamed_tihilolnr30/output_lgfs///k0ttilo00at11b1x5.lgf
