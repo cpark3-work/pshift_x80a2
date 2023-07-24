@@ -1,7 +1,7 @@
 Run by:       cpark3
-Run date:     Jul 23 2023 21:22:52
+Run date:     Jul 23 2023 21:33:14
 Run on:       plxchx088.pdx.intel.com
 Platform:     SUSE Linux Enterprise Server 12 SP5
-PID:          29888
+PID:          7022
 Binary path:  /nfs/site/proj/cit/tools/laygen/latest//bin/sles12/laygenFTCG
 Args:         --input_dir _t_all_lvspass_lnr30/ --output_dir renamed_lvspasslnr21/ --layer_map p1280_pshift.map --shift_spec rename_only.txt --cellName_map newlnr30tolnr21.map 
